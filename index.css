@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Belleza&display=swap");
+
+/* || CSS RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* || ROOT */
+:root {
+  font-family: "Belleza", sans-serif;
+  --primary-color: #cfbaf0;
+  --secondary-color: #ff6584;
+  --font-color: rgb(155, 155, 155);
+}
+
+/* || HOME SECTION */
+.home-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.section-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 40rem;
+}
+
+.section-header {
+  font-size: 3rem;
+}
+
+.section-text {
+  font-size: 1.3rem;
+  max-width: 65%;
+  color: var(--font-color);
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.section-left-highlight {
+  color: var(--secondary-color);
+}
+
+.section-link {
+  background-color: var(--secondary-color);
+  text-decoration: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  cursor: pointer;
+  color: black;
+}
+
+.section-link:hover {
+  background-color: var(--primary-color);
+}
+
+.section-right {
+  margin-right: 1.5rem;
+}
+
+.section-img {
+  max-width: 40rem;
+}
+
+/* || MEDIA QUERIES */
+@media screen and (max-width: 1030px) {
+  .home-section {
+    flex-direction: column;
+  }
+
+  .section-img {
+    max-width: 25rem;
+  }
+}
