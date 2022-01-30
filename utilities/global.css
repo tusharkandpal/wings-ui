@@ -1,34 +1,46 @@
-a {
-  display: inline-block;
+@import url("https://fonts.googleapis.com/css2?family=Belleza&display=swap");
+
+/* || CSS RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* || UTILITIES */
+:root {
+  font-size: 18px;
+  font-family: "Belleza", sans-serif;
+  --primary-color: #cfbaf0;
+  --secondary-color: #ff6584;
+  --font-color: rgb(155, 155, 155);
+  --card-color: #98f5e1;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+
+/* || RESPONSIVE IMAGE */
 .img-box {
   object-fit: contain;
 }
 
-.mp-medium {
-  margin: 0.5rem;
-  padding: 0.5rem;
-}
-
 /* || HOME HEADER */
-#home-header {
-  display: flex;
-  justify-content: space-between;
-}
-
 .home-header-title {
   margin: 1rem;
 }
 
 .home-nav {
   margin: 0.5rem;
-  display: flex;
+}
+
+.ls-none {
+  list-style: none;
 }
 
 .home-nav-list {
-  list-style: none;
   display: flex;
   align-items: center;
 }
@@ -38,7 +50,6 @@ a {
 }
 
 .home-nav-link {
-  text-decoration: none;
   margin: 0 0.8rem;
   padding: 0.3rem 0.8rem;
   border-bottom: 2px solid transparent;

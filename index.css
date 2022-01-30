@@ -1,40 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Belleza&display=swap");
-
-/* || CSS RESET */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* || ROOT */
-:root {
-  font-family: "Belleza", sans-serif;
-  --primary-color: #cfbaf0;
-  --secondary-color: #ff6584;
-  --font-color: rgb(155, 155, 155);
-}
+@import url("./utilities/global.css");
+@import url("./helper/spacing.css");
+@import url("./helper/flex.css");
+@import url("./helper/size.css");
+@import url("./helper/doc.css");
 
 /* || HOME SECTION */
-.home-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin: 0.5rem;
-  padding: 0.5rem;
-}
-
-.section-left {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  max-width: 40rem;
-}
-
-.section-header {
-  font-size: 3rem;
-}
-
 .section-text {
   font-size: 1.3rem;
   max-width: 65%;
@@ -43,7 +13,7 @@
   padding-top: 0;
 }
 
-.section-left-highlight {
+.section-text-highlight {
   color: var(--secondary-color);
 }
 
@@ -52,7 +22,7 @@
   text-decoration: none;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
-  margin: 1rem;
+  margin: 2rem 1rem 1rem 1rem;
   cursor: pointer;
   color: black;
 }
@@ -61,21 +31,18 @@
   background-color: var(--primary-color);
 }
 
-.section-right {
-  margin-right: 1.5rem;
-}
-
 .section-img {
-  max-width: 40rem;
+  max-width: 100%;
+  width: 70rem;
 }
 
 /* || MEDIA QUERIES */
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 800px) {
   .home-section {
     flex-direction: column;
   }
 
   .section-img {
-    max-width: 25rem;
+    width: 30rem;
   }
 }

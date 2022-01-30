@@ -1,0 +1,77 @@
+/* || MARGIN PADDING */
+.mp-xs {
+  margin: 0.3rem;
+  padding: 0.3rem;
+}
+
+.mp-s {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.mp-m {
+  margin: 0.8rem;
+  padding: 0.8rem;
+}
+
+.mp-l {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.mp-xl {
+  margin: 1.3rem;
+  padding: 1.3rem;
+}
+
+/* MARGIN PADDING HORIZONTAL */
+.mpx-xs {
+  margin: 0 0.3rem;
+  padding: 0 0.3rem;
+}
+
+.mpx-s {
+  margin: 0 0.5rem;
+  padding: 0 0.5rem;
+}
+
+.mpx-m {
+  margin: 0 0.8rem;
+  padding: 0 0.8rem;
+}
+
+.mpx-l {
+  margin: 0 1rem;
+  padding: 0 1rem;
+}
+
+.mpx-xl {
+  margin: 0 1.3rem;
+  padding: 0 1.3rem;
+}
+
+/* MARGIN PADDING VERTICAL */
+.mpy-xs {
+  margin: 0.3rem 0;
+  padding: 0.3rem 0;
+}
+
+.mpy-s {
+  margin: 0.5rem 0;
+  padding: 0.5rem 0;
+}
+
+.mpy-m {
+  margin: 0.8rem 0;
+  padding: 0.8rem 0;
+}
+
+.mpy-l {
+  margin: 1rem 0;
+  padding: 1rem 0;
+}
+
+.mpy-xl {
+  margin: 1.3rem 0;
+  padding: 1.3rem 0;
+}
