@@ -62,11 +62,13 @@
 .card-link:hover {
   background-color: rgb(255, 241, 254);
 }
-.far,.fas {
+.far,
+.fas {
   cursor: pointer;
   padding: 0.2rem 0.4rem;
 }
-.far:hover,.fas:hover {
+.far:hover,
+.fas:hover {
   border-radius: 0.3rem;
   background-color: #e6e3e3;
 }
