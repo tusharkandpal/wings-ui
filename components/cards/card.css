@@ -1,0 +1,108 @@
+@import url("../../utilities/global.css");
+@import url("../../helper/spacing.css");
+@import url("../../helper/size.css");
+@import url("../../helper/flex.css");
+@import url("../../helper/doc.css");
+
+.component-type {
+  padding-bottom: 2rem;
+}
+.component-type:not(:last-child) {
+  border-bottom: 3px solid var(--card-color);
+}
+.active-component {
+  border-radius: 0.3rem;
+  background-color: var(--card-color);
+}
+
+/* || CARD VERTICAL (1)*/
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.3rem;
+  box-shadow: 0px 0px 0.5rem 0 #e6e3e3;
+}
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 0px 0.5rem 0 #c4c4c4;
+  transition: transform 0.3s;
+}
+.card-vertical {
+  max-width: 18rem;
+  margin: 0.5rem;
+}
+.card-details-container {
+  display: flex;
+  flex-direction: column;
+}
+.card-details {
+  margin-bottom: 0.5rem;
+}
+.card-title {
+  margin: 0.8rem 0 0 0.8rem;
+}
+.card-author {
+  color: var(--font-color);
+  margin: 0 0 0 1rem;
+}
+.card-img {
+  object-fit: contain;
+  border-radius: 0.2rem;
+  width: 100%;
+}
+.card-action-items {
+  display: flex;
+  margin: 1rem 0;
+  justify-content: space-around;
+}
+.card-link {
+  text-decoration: none;
+  border-radius: 0.2rem;
+  margin-right: 0.3rem;
+  padding: 0.2rem 0.4rem;
+  color: rgb(224, 115, 217);
+}
+.card-link:hover {
+  background-color: rgb(255, 241, 254);
+}
+i {
+  padding: 0.2rem 0.4rem;
+}
+i:hover {
+  cursor: pointer;
+  border-radius: 0.3rem;
+  background-color: #e6e3e3;
+}
+
+/* CARD VERTICAL (2)*/
+.card-overlay-container {
+  position: relative;
+  top: 0;
+}
+.card-overlay-details {
+  position: absolute;
+  bottom: 2rem;
+  left: 1.5rem;
+}
+.card-overlay-title {
+  color: white;
+}
+.card-overlay-author {
+  color: var(--font-color);
+}
+
+/* CARD HORIZONTAL */
+.card-horizontal {
+  max-width: 22rem;
+}
+.card-details-horizontal {
+  display: flex;
+}
+.card-img-horizontal {
+  max-width: 10rem;
+  border-radius: 0.2rem 0 0.2rem 0;
+}
+.card-text {
+  padding: 1rem;
+  color: var(--font-color);
+}

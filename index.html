@@ -5,34 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./assets/Wings.svg" />
-    <link rel="stylesheet" href="./index.css" />
-    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" type="text/css" href="./index.css" />
     <title>Wings UI</title>
   </head>
   <body>
     <main id="home-main">
-      <header id="home-header">
-        <h1 class="home-header-title">WINGS UI</h1>
-        <nav class="home-nav">
-          <ul class="home-nav-list">
+      <header id="home-header" class='flex-row flex-space-btw'>
+        <h1 class="home-header-title"><a href='/'>WINGS UI</a></h1>
+        <nav class="home-nav flex-row">
+          <ul class="home-nav-list ls-none">
             <li class="home-nav-item">
               <a class="home-nav-link nav-link-active" href="/">Home</a>
             </li>
             <li class="home-nav-item">
-              <a class="home-nav-link" href="/">Docs</a>
+              <a class="home-nav-link" href="./components/cards/card.html">Docs</a>
             </li>
           </ul>
         </nav>
       </header>
-      <section class="home-section">
+      <section class="home-section mp-s flex-row flex-space-around">
         <div class="section-left">
-          <h2 class="section-header mp-medium">CSS on the fly</h2>
-          <p class="section-text mp-medium">
-            <strong class="section-left-highlight">Wings UI</strong> provides a
+          <h2 class="section-header mp-s font-xxl">CSS on the fly</h2>
+          <p class="section-text mp-s">
+            <strong class="section-text-highlight">Wings UI</strong> provides a
             customizable, robust, & accessible library of various components
             enabling you to build your own webpages faster & efficient way.
           </p>
-          <a class="section-link" href="/">Getting Started</a>
+          <a class="section-link" href="./components/cards/card.html">Getting Started</a>
         </div>
         <div class="img-box section-right">
           <img
