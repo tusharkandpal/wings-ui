@@ -2,15 +2,18 @@
 @import url("./helper/spacing.css");
 @import url("./helper/flex.css");
 @import url("./helper/size.css");
-@import url("./helper/doc.css");
+
+/* || ROOT CSS */
+:root {
+  --card-color: #98f5e1;
+  --alert-color: #a3c4f3;
+}
 
 /* || DOCS MAIN */
-#doc-main {
-  max-height: 100vh;
-}
 .doc-sidebar {
-  flex-basis: 100px;
   border-right: 2px solid var(--secondary-color);
+  text-align: center;
+  max-height: 90vh;
 }
 .sidebar-header {
   color: var(--secondary-color);
@@ -27,4 +30,22 @@ iframe {
   left: 0;
   width: 1000px;
   height: 100%;
+}
+
+/* || COMPONENT CSS */
+.component-type {
+  padding-bottom: 2rem;
+}
+
+/* || MEDIA QUERIES */
+@media screen and (max-width: 800px) {
+  .doc-section,
+  .sidebar-list {
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+  .component-display {
+    margin: 0.5rem 0;
+    padding: 0.5rem 0;
+  }
 }

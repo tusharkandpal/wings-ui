@@ -1,0 +1,132 @@
+/* || IMPORTS */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+@import url("../../helper/spacing.css");
+@import url("../../helper/size.css");
+@import url("../../helper/flex.css");
+@import url("../../helper/doc.css");
+
+/* || ROOT CSS */
+:root {
+  --status-online: rgb(10, 128, 10);
+  --status-busy: rgb(207, 25, 25);
+  --status-offline: rgb(99, 99, 99);
+  --placeholder-color: rgb(167, 167, 167);
+}
+
+/* || COMPONENT CSS */
+.component-type:not(:last-child) {
+  border-bottom: 3px solid var(--avatar-color);
+}
+.active-component {
+  background-color: var(--avatar-color);
+}
+
+/* || AVATAR */
+.avatar {
+  padding: 0 0.5rem;
+  margin: 0.5rem;
+}
+.avatar-img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* || BASIC AVATAR */
+.avatar-xs {
+  height: 2rem;
+  width: 2rem;
+}
+.avatar-s {
+  height: 3rem;
+  width: 3rem;
+}
+.avatar-m {
+  height: 4rem;
+  width: 4rem;
+}
+.avatar-l {
+  height: 5rem;
+  width: 5rem;
+}
+.avatar-xl {
+  height: 6rem;
+  width: 6rem;
+}
+
+/* || STATUS AVATAR */
+.avatar-status {
+  position: relative;
+  top: 0;
+}
+.status {
+  position: absolute;
+  bottom: 0;
+}
+.status-xs {
+  right: 0.5rem;
+}
+.status-s {
+  bottom: 0.1rem;
+  right: 0.4rem;
+}
+.status-m {
+  bottom: 0.1rem;
+  right: 0.7rem;
+}
+.status-l {
+  bottom: 0.3rem;
+  right: 0.9rem;
+}
+.status-xl {
+  bottom: 0.5rem;
+  right: 0.6rem;
+}
+.status-online {
+  color: var(--status-online);
+}
+.status-offline {
+  color: var(--status-offline);
+}
+.status-busy,
+.status-share {
+  color: var(--status-busy);
+}
+
+/* || PLACEHOLDER AVATAR */
+.placeholder-icon {
+  color: var(--placeholder-color);
+}
+.placeholder-xs {
+  font-size: 1.5rem;
+}
+.placeholder-s {
+  font-size: 2.5rem;
+}
+.placeholder-m {
+  font-size: 3.5rem;
+}
+.placeholder-l {
+  font-size: 4.5rem;
+}
+.placeholder-xl {
+  font-size: 5.5rem;
+}
+
+/* || PROFILE AVATAR */
+.avatar-profile {
+  display: inline-flex;
+  place-items: center;
+  border: 1px solid var(--status-offline);
+  padding-right: 0.9rem;
+  border-radius: 0.3rem;
+}
+.avatar-details {
+  display: flex;
+  flex-direction: column;
+}
+.avatar-name {
+  margin-bottom: 0.1rem;
+}
+.avatar-link {
+  color: var(--status-offline);
+}

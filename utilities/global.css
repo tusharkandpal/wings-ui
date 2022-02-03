@@ -1,3 +1,4 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 @import url("https://fonts.googleapis.com/css2?family=Belleza&display=swap");
 
 /* || CSS RESET */
@@ -13,7 +14,6 @@
   --primary-color: #cfbaf0;
   --secondary-color: #ff6584;
   --font-color: rgb(155, 155, 155);
-  --card-color: #98f5e1;
 }
 
 a {
@@ -55,10 +55,21 @@ a {
   border-bottom: 2px solid transparent;
 }
 
-.home-nav-link:hover {
-  border-color: 2px solid var(--primary-color);
-}
-
 .nav-link-active {
   color: var(--secondary-color);
+}
+
+/* || HOVER EFFECTS */
+.home-nav-link:hover {
+  border-color: var(--primary-color);
+}
+
+.nav-link-active:hover {
+  border-color: var(--secondary-color);
+}
+
+@media screen and (max-width: 800px) {
+  :root {
+    font-size: 15px;
+  }
 }
