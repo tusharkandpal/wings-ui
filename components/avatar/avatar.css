@@ -1,24 +1,9 @@
-/* || IMPORTS */
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
-@import url("../../helper/spacing.css");
-@import url("../../helper/size.css");
-@import url("../../helper/flex.css");
-@import url("../../helper/doc.css");
-
 /* || ROOT CSS */
 :root {
   --status-online: rgb(10, 128, 10);
   --status-busy: rgb(207, 25, 25);
   --status-offline: rgb(99, 99, 99);
   --placeholder-color: rgb(167, 167, 167);
-}
-
-/* || COMPONENT CSS */
-.component-type:not(:last-child) {
-  border-bottom: 3px solid var(--avatar-color);
-}
-.active-component {
-  background-color: var(--avatar-color);
 }
 
 /* || AVATAR */
@@ -130,3 +115,4 @@
 .avatar-link {
   color: var(--status-offline);
 }
+
