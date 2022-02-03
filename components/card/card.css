@@ -1,4 +1,4 @@
-@import url("../../utilities/global.css");
+/* || IMPORTS */
 @import url("../../helper/spacing.css");
 @import url("../../helper/size.css");
 @import url("../../helper/flex.css");
@@ -8,7 +8,6 @@
   border-bottom: 3px solid var(--card-color);
 }
 .active-component {
-  border-radius: 0.3rem;
   background-color: var(--card-color);
 }
 
