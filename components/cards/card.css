@@ -4,9 +4,6 @@
 @import url("../../helper/flex.css");
 @import url("../../helper/doc.css");
 
-.component-type {
-  padding-bottom: 2rem;
-}
 .component-type:not(:last-child) {
   border-bottom: 3px solid var(--card-color);
 }
@@ -65,11 +62,13 @@
 .card-link:hover {
   background-color: rgb(255, 241, 254);
 }
-i {
+.far,
+.fas {
+  cursor: pointer;
   padding: 0.2rem 0.4rem;
 }
-i:hover {
-  cursor: pointer;
+.far:hover,
+.fas:hover {
   border-radius: 0.3rem;
   background-color: #e6e3e3;
 }

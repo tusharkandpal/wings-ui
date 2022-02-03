@@ -1,0 +1,82 @@
+/* || IMPORTS */
+@import url("../../utilities/global.css");
+@import url("../../helper/spacing.css");
+@import url("../../helper/size.css");
+@import url("../../helper/flex.css");
+@import url("../../helper/doc.css");
+
+/* || ROOT CSS */
+:root {
+    --primary-alert-light: #CFE2FF;
+    --secondary-alert-light: #E2E3E5;
+    --success-alert-light: #D1E7DD;
+    --danger-alert-light: #F8D7DA;
+    --warning-alert-light: #FFF3CD;
+    --info-alert-light: #CFF4FC;
+    --primary-alert-dark: #2864be;
+    --secondary-alert-dark: #808080;
+    --success-alert-dark: #17925a;
+    --danger-alert-dark: #ca2b39;
+    --warning-alert-dark: #b89628;
+    --info-alert-dark: #2d96ad;
+}
+
+/* || COMPONENT CSS */
+.component-type:not(:last-child) {
+  border-bottom: 3px solid var(--alert-color);
+}
+.active-component {
+  border-radius: 0.3rem;
+  background-color: var(--alert-color);
+}
+
+/* || ALERT */
+.alert {
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 0.3rem;
+}
+
+/* -------------------- || BASIC ALERTS ---------------------------- */
+
+/* || BASIC PRIMARY ALERT */
+.alert-primary {
+    background-color: var(--primary-alert-light);
+    color: var(--primary-alert-dark);
+}
+
+/* || BASIC SECONDARY ALERT */
+.alert-secondary {
+    background-color: var(--secondary-alert-light);
+    color: var(--secondary-alert-dark);
+}
+
+/* || BASIC SUCCESS ALERT */
+.alert-success {
+    background-color: var(--success-alert-light);
+    color: var(--success-alert-dark);
+}
+
+/* || BASIC DANGER ALERT */
+.alert-danger {
+    background-color: var(--danger-alert-light);
+    color: var(--danger-alert-dark);
+}
+
+/* || BASIC WARNING ALERT */
+.alert-warning {
+    background-color: var(--warning-alert-light);
+    color: var(--warning-alert-dark);
+}
+
+/* || BASIC INFO ALERT */
+.alert-info {
+    background-color: var(--info-alert-light);
+    color: var(--info-alert-dark);
+}
+
+/* -------------------- || LINK ALERTS ---------------------------- */
+
+.alert-link {
+    text-decoration: underline;
+}
