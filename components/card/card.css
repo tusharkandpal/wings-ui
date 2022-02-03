@@ -1,17 +1,14 @@
-@import url("../../utilities/global.css");
+/* || IMPORTS */
 @import url("../../helper/spacing.css");
 @import url("../../helper/size.css");
 @import url("../../helper/flex.css");
 @import url("../../helper/doc.css");
 
-.component-type {
-  padding-bottom: 2rem;
-}
+/* || COMPONENT CSS */
 .component-type:not(:last-child) {
   border-bottom: 3px solid var(--card-color);
 }
 .active-component {
-  border-radius: 0.3rem;
   background-color: var(--card-color);
 }
 
