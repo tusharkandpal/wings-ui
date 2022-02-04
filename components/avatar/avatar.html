@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="../../assets/Wings.svg" />
-    <link rel="stylesheet" type="text/css" href="./avatar.css" />
+    <link rel="stylesheet" type="text/css" href="../../utilities/doc.css" />
     <title>Docs | Avatar</title>
   </head>
   <body>
@@ -17,7 +17,7 @@
             <a class="home-nav-link" href="/">Home</a>
           </li>
           <li class="home-nav-item">
-            <a class="home-nav-link nav-link-active" href="./card.html">Docs</a>
+            <a class="home-nav-link nav-link-active" href="../alert/alert.html">Docs</a>
           </li>
         </ul>
       </nav>
@@ -28,10 +28,10 @@
         <ul class="sidebar-list ls-none mp-m">
           <strong class="sidebar-header font-m">Components</strong>
           <li class="sidebar-item mp-m">
-            <a href="./avatar.html" class="sidebar-link">Avatar</a>
-          </li>
-          <li class="sidebar-item mp-m">
             <a href="../alert/alert.html" class="sidebar-link">Alert</a>
+          </li>
+          <li class="sidebar-item mp-m active-component" style="background-color: var(--avatar-color);">
+            <a href="./avatar.html" class="sidebar-link">Avatar</a>
           </li>
           <li class="sidebar-item mp-m">
             <a href="/" class="sidebar-link">Badge</a>
@@ -39,8 +39,8 @@
           <li class="sidebar-item mp-m">
             <a href="/" class="sidebar-link">Button</a>
           </li>
-          <li class="sidebar-item mp-m active-component">
-            <a href="../card/card.html" class="sidebar-link">Cards</a>
+          <li class="sidebar-item mp-m">
+            <a href="../card/card.html" class="sidebar-link">Card</a>
           </li>
           <li class="sidebar-item mp-m">
             <a href="/" class="sidebar-link">Image</a>
@@ -58,7 +58,7 @@
         </p>
 
         <!-- || Basic Avatar -->
-        <div class="component-type mp-s">
+        <div class="component-type mp-s" style='border-color: var(--avatar-color);'>
           <h3 class="component-header font-l">Basic Avatar</h3>
           <p class="component-text mpy-s">
             A basic avatar to display the picture of the user.
@@ -100,6 +100,9 @@
               />
             </span>
           </div>
+          <p class="iframe-text mpy-xs">
+            Following code snap is here for your reference:
+          </p>
           <div class="iframe-container">
             <iframe
               src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=application%2Ftypescript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2520avatar-xs%2522%2520src%253D%2522img-url%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2520avatar-s%2522%2520src%253D%2522img-url%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2520avatar-m%2522%2520src%253D%2522img-url%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2520avatar-l%2522%2520src%253D%2522img-url%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2520avatar-xl%2522%2520src%253D%2522img-url%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%250A%250A"
@@ -110,20 +113,18 @@
         </div>
 
         <!-- || Status Avatar -->
-        <div class="component-type mp-s">
+        <div class="component-type mp-s" style='border-color: var(--avatar-color);'>
           <h3 class="component-header font-l">Status Avatar</h3>
           <p class="component-text mpy-s">
             This shows the status of an avatar along with the user's picture.
           </p>
           <div class="component-display mp-m">
             <span class="avatar avatar-status">
-              <span
-                ><img
-                  class="avatar-img avatar-xs"
-                  src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
-                  alt="avatar"
-                />
-              </span>
+              <img
+                class="avatar-img avatar-xs"
+                src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+                alt="avatar"
+              />
               <i class="fas fa-check-circle status status-xs status-online"></i>
             </span>
             <span class="avatar avatar-status">
@@ -161,9 +162,12 @@
               ></i>
             </span>
           </div>
+          <p class="iframe-text mpy-xs">
+            Following code snap is here for your reference:
+          </p>
           <div class="iframe-container">
             <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=application%2Ftypescript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520avatar-status%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2520avatar-xs%2522%2520src%253D%2522img-url%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-check-circle%2520status%2520status-xs%2520status-online%2522%253E%253C%252Fi%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520avatar-status%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2520avatar-s%2522%2520src%253D%2522img-url%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times-circle%2520status%2520status-s%2520status-offline%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520avatar-status%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2520avatar-m%2522%2520src%253D%2522img-url%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-circle%2520status%2520status-m%2520status-busy%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520avatar-status%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2520avatar-l%2522%2520src%253D%2522img-url%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-minus-circle%2520status%2520status-l%2520status-share%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520avatar-status%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2520avatar-xl%2522%2520src%253D%2522img-url%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-question-circle%2520status%2520status-xl%2520status-unknown%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%250A"
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520avatar-status%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2520avatar-xs%2522%2520src%253D%2522img-url%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-check-circle%2520status%2520status-xs%2520status-online%2522%253E%253C%252Fi%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520avatar-status%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2520avatar-s%2522%2520src%253D%2522img-url%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times-circle%2520status%2520status-s%2520status-offline%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520avatar-status%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2520avatar-m%2522%2520src%253D%2522img-url%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-circle%2520status%2520status-m%2520status-busy%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520avatar-status%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2520avatar-l%2522%2520src%253D%2522img-url%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-minus-circle%2520status%2520status-l%2520status-share%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520avatar-status%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2520avatar-xl%2522%2520src%253D%2522img-url%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-question-circle%2520status%2520status-xl%2520status-unknown%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%250A"
               sandbox="allow-scripts allow-same-origin"
             >
             </iframe>
@@ -171,7 +175,7 @@
         </div>
 
         <!-- || Placeholder Avatar -->
-        <div class="component-type mp-s">
+        <div class="component-type mp-s" style='border-color: var(--avatar-color);'>
           <h3 class="component-header font-l">Placeholder Avatar</h3>
           <p class="component-text mpy-s">
             A placeholder avatar defines a user without a picture or a default
@@ -194,6 +198,9 @@
               <i class="fas fa-user-circle placeholder-icon placeholder-xl"></i>
             </span>
           </div>
+          <p class="iframe-text mpy-xs">
+            Following code snap is here for your reference:
+          </p>
           <div class="iframe-container">
             <iframe
               src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=application%2Ftypescript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%250A%2509%253Cspan%2520class%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-user-circle%2520placeholder-icon%2520placeholder-xs%2522%253E%253C%252Fi%253E%2520%2520%2520%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-user-circle%2520placeholder-icon%2520placeholder-s%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-user-circle%2520placeholder-icon%2520placeholder-m%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-user-circle%2520placeholder-icon%2520placeholder-l%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-user-circle%2520placeholder-icon%2520placeholder-xl%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%250A"
@@ -201,36 +208,39 @@
             >
             </iframe>
           </div>
+        </div>
 
-          <!-- || Profile Avatar -->
-          <div class="component-type mp-s">
-            <h3 class="component-header font-l">Profile Avatar</h3>
-            <p class="component-text mpy-s">
-              An avatar with a brief description of a user. Also, contains a
-              link to user's full profile for easy navigation.
-            </p>
-            <div class="component-display mp-m">
-              <div class="avatar-profile">
-                <span class="avatar">
-                  <img
-                    class="avatar-img avatar-m"
-                    src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
-                    alt="avatar"
-                  />
-                </span>
-                <span class="avatar-details">
-                  <strong class="avatar-name">Tushar Kandpal</strong>
-                  <a class="avatar-link" href="#avatar-link">View profile</a>
-                </span>
-              </div>
+        <!-- || Profile Avatar -->
+        <div class="component-type mp-s">
+          <h3 class="component-header font-l">Profile Avatar</h3>
+          <p class="component-text mpy-s">
+            An avatar with a brief description of a user. Also, contains a link
+            to user's full profile for easy navigation.
+          </p>
+          <div class="component-display mp-m">
+            <div class="avatar-profile">
+              <span class="avatar">
+                <img
+                  class="avatar-img avatar-m"
+                  src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                  alt="avatar"
+                />
+              </span>
+              <span class="avatar-details">
+                <strong class="avatar-name">Tushar Kandpal</strong>
+                <a class="avatar-link" href="#avatar-link">View profile</a>
+              </span>
             </div>
-            <div class="iframe-container">
-              <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=application%2Ftypescript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%250A%2509%253Cdiv%2520class%253D%2522avatar-profile%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2520avatar-m%2522%2520src%253D%2522img-url%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%2520%2520%250A%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar-details%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%2520class%253D%2522avatar-name%2522%253ETushar%2520Kandpal%253C%252Fstrong%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522avatar-link%2522%2520href%253D%2522%2523link%2522%253EView%2520profile%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A"
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
-            </div>
+          </div>
+          <p class="iframe-text mpy-xs">
+            Following code snap is here for your reference:
+          </p>
+          <div class="iframe-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%250A%2509%253Cdiv%2520class%253D%2522avatar-profile%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2520avatar-m%2522%2520src%253D%2522img-url%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar-details%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%2520class%253D%2522avatar-name%2522%253ETushar%2520Kandpal%253C%252Fstrong%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522avatar-link%2522%2520href%253D%2522%2523link%2522%253EView%2520profile%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
           </div>
         </div>
       </section>
