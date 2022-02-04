@@ -1,15 +1,18 @@
+/* || IMPORTS */
 @import url("../utilities/global.css");
-@import url("./helper/spacing.css");
-@import url("./helper/flex.css");
-@import url("./helper/size.css");
+@import url('../components/component.css');
 
 /* || ROOT CSS */
 :root {
-  --card-color: #98f5e1;
+  --avatar-color: #fde4cf;
   --alert-color: #a3c4f3;
+  --card-color: #98f5e1;
 }
 
 /* || DOCS MAIN */
+.doc-section {
+  flex: 1;
+}
 .doc-sidebar {
   border-right: 2px solid var(--secondary-color);
   text-align: center;
@@ -33,8 +36,14 @@ iframe {
 }
 
 /* || COMPONENT CSS */
+.active-component {
+  border-radius: 0.3rem;
+}
 .component-type {
   padding-bottom: 2rem;
+}
+.component-type:not(:last-child) {
+  border-bottom: 3px solid;
 }
 
 /* || MEDIA QUERIES */
@@ -49,3 +58,4 @@ iframe {
     padding: 0.5rem 0;
   }
 }
+

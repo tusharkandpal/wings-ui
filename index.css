@@ -1,7 +1,5 @@
+/* || IMPORTS */
 @import url("./utilities/global.css");
-@import url("./helper/spacing.css");
-@import url("./helper/flex.css");
-@import url("./helper/size.css");
 
 /* || HOME SECTION */
 .section-text {

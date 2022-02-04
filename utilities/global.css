@@ -1,5 +1,9 @@
+/* || IMPORTS */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 @import url("https://fonts.googleapis.com/css2?family=Belleza&display=swap");
+@import url("../helper/spacing.css");
+@import url("../helper/flex.css");
+@import url("../helper/size.css");
 
 /* || CSS RESET */
 * {
@@ -13,7 +17,7 @@
   font-family: "Belleza", sans-serif;
   --primary-color: #cfbaf0;
   --secondary-color: #ff6584;
-  --font-color: rgb(155, 155, 155);
+  --font-color: #9b9b9b;
 }
 
 a {
@@ -73,3 +77,4 @@ a {
     font-size: 15px;
   }
 }
+
