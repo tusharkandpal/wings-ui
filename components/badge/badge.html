@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../../assets/Wings.svg" />
+    <link rel="stylesheet" href="../../utilities/doc.css" />
+    <title>Wings UI | Badge</title>
+  </head>
+  <body>
+    <header id="home-header" class="flex-row flex-space-btw">
+      <h1 class="home-header-title"><a href="/">WINGS UI</a></h1>
+      <nav class="home-nav flex-row">
+        <ul class="home-nav-list ls-none">
+          <li class="home-nav-item">
+            <a class="home-nav-link" href="/">Home</a>
+          </li>
+          <li class="home-nav-item">
+            <a class="home-nav-link nav-link-active" href="../alert/alert.html"
+              >Docs</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="doc-main" class="flex-row">
+      <aside class="doc-sidebar">
+        <ul class="sidebar-list ls-none mp-m">
+          <li class="sidebar-header font-m"><strong>Components</strong></li>
+          <li class="sidebar-item mp-m">
+            <a href="./alert.html" class="sidebar-link">Alert</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../avatar/avatar.html" class="sidebar-link">Avatar</a>
+          </li>
+          <li
+            class="sidebar-item mp-m active-component"
+            style="background-color: var(--badge-color)"
+          >
+            <a href="./badge.html" class="sidebar-link">Badge</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../button/button.html" class="sidebar-link">Button</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../card/card.html" class="sidebar-link">Card</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../image/image.html" class="sidebar-link">Image</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../input/input.html" class="sidebar-link">Input</a>
+          </li>
+        </ul>
+      </aside>
+      <section class="doc-section mp-m">
+        <h2 class="doc-header font-xl">Badge</h2>
+        <p class="doc-text mpy-s">
+          Wing UI’s badge component can be used to complement other elements
+          such as buttons or to show the count of a given data, such as the
+          number of comments for an article or how much time has passed by since
+          a comment has been made.
+        </p>
+
+        <!-- || Icon Badge -->
+        <div
+          class="component-type mp-s"
+          style="border-color: var(--badge-color)"
+        >
+          <h3 class="component-header font-l">Icon Badge</h3>
+          <p class="component-text mpy-s">
+            The badges appear as small dots over the logo of an app on a user's
+            screen and can be designed in a wide range of eye-catching colors.
+          </p>
+          <div class="component-display mp-m">
+            <span class="badge icon-badge">
+              <i class="fas fa-shopping-cart badge-symbol"></i>
+              <span class="badge-count">5</span>
+            </span>
+            <span class="badge icon-badge">
+              <i class="fas fa-phone badge-symbol"></i>
+              <span class="badge-count">8</span>
+            </span>
+            <span class="badge icon-badge">
+              <i class="fab fa-whatsapp-square badge-symbol"></i>
+              <span class="badge-count">999</span>
+            </span>
+          </div>
+          <p class="iframe-text mpy-xs">
+            Following code snap is here for your reference:
+          </p>
+          <div class="iframe-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520icon-badge%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2520badge-symbol%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-count%2522%253E5%253C%252Fspan%253E%250A%2520%2520%253C%252Fspan%253E%250A%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520icon-badge%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-phone%2520badge-symbol%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-count%2522%253E8%253C%252Fspan%253E%250A%2520%2520%253C%252Fspan%253E%250A%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520icon-badge%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fab%2520fa-whatsapp-square%2520badge-symbol%2522%253E%253C%252Fi%253E%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-count%2522%253E899%253C%252Fspan%253E%250A%2520%2520%253C%252Fspan%253E%250A%250A%250A"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <!-- || Avatar Badge -->
+        <div class="component-type mp-s">
+          <h3 class="component-header font-l">Avatar Badge</h3>
+          <p class="component-text mpy-s">
+            Use the avatar badges to show status of an avatar. Generally used in
+            communication tools.
+          </p>
+          <div class="component-display mp-m">
+            <span class="badge avatar-badge">
+              <img
+                class="badge-img"
+                src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+              />
+              <i class="fas fa-minus-circle avatar-badge-status"></i>
+            </span>
+            <span class="badge avatar-badge">
+              <i class="fas fa-user-circle avatar-badge-icon"></i>
+              <i class="fas fa-circle avatar-badge-status"></i>
+            </span>
+            <span class="badge avatar-badge">
+              <img
+                class="badge-img"
+                src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              />
+              <i class="fas fa-star avatar-badge-rate"></i>
+            </span>
+          </div>
+          <p class="iframe-text mpy-xs">
+            Following code snap is here for your reference:
+          </p>
+          <div class="iframe-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520avatar-badge%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522badge-img%2522%2520src%253D%2522img-url%2522%2520%252F%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-minus-circle%2520avatar-badge-status%2522%253E%253C%252Fi%253E%2520%2520%2520%250A%2520%2520%253C%252Fspan%253E%250A%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520avatar-badge%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-user-circle%2520avatar-badge-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-circle%2520avatar-badge-status%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fspan%253E%250A%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520avatar-badge%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522badge-img%2522%2520src%253D%2522img-url%2522%2520%252F%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520avatar-badge-rate%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fspan%253E%250A%250A%250A"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      const badgeCountElements = [...document.querySelectorAll(".badge-count")];
+      badgeCountElements.forEach((el) => {
+        if (Number(el.innerText) > 99) el.innerText = "+99";
+      });
+    </script>
+  </body>
+</html>
+
