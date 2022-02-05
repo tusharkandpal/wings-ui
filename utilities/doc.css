@@ -4,9 +4,13 @@
 
 /* || ROOT CSS */
 :root {
-  --avatar-color: #fde4cf;
   --alert-color: #a3c4f3;
+  --avatar-color: #fde4cf;
+  --badge-color: #CFBAF0;
+  --button-color: #B9FBC0;
   --card-color: #98f5e1;
+  --image-color: #FFC8DD;
+  --input-color: #f8e4ff;
 }
 
 /* || DOCS MAIN */
@@ -24,7 +28,7 @@
 .iframe-container {
   position: relative;
   overflow: auto;
-  height: 70vh;
+  min-height: 70vh;
 }
 iframe {
   border: 0;
