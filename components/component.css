@@ -1,7 +1,7 @@
 /* || IMPORTS */
-@import url("./helper/spacing.css");
-@import url("./helper/flex.css");
-@import url("./helper/size.css");
+@import url("../helper/spacing.css");
+@import url("../helper/flex.css");
+@import url("../helper/size.css");
 @import url("../components/alert/alert.css");
 @import url("../components/avatar/avatar.css");
 @import url("../components/card/card.css");
