@@ -58,13 +58,11 @@
 .card-link:hover {
   background-color: var(--card-link-hover-color);
 }
-.far,
-.fas {
+.card-icon {
   cursor: pointer;
   padding: 0.2rem 0.4rem;
 }
-.far:hover,
-.fas:hover {
+.card-icon:hover {
   border-radius: 0.3rem;
   background-color: var(--card-shadow-color);
 }
