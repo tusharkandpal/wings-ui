@@ -1,22 +1,19 @@
 /* || IMPORTS */
 @import url("../utilities/global.css");
-@import url('../components/component.css');
+@import url("../components/component.css");
 
 /* || ROOT CSS */
 :root {
   --alert-color: #a3c4f3;
   --avatar-color: #fde4cf;
-  --badge-color: #CFBAF0;
-  --button-color: #B9FBC0;
+  --badge-color: #cfbaf0;
+  --button-color: #b9fbc0;
   --card-color: #98f5e1;
-  --image-color: #FFC8DD;
+  --image-color: #ffc8dd;
   --input-color: #f8e4ff;
 }
 
 /* || DOCS MAIN */
-.doc-section {
-  flex: 1;
-}
 .doc-sidebar {
   border-right: 2px solid var(--secondary-color);
   text-align: center;
@@ -25,10 +22,13 @@
 .sidebar-header {
   color: var(--secondary-color);
 }
+.doc-section {
+  flex: 1;
+}
 .iframe-container {
   position: relative;
   overflow: auto;
-  min-height: 70vh;
+  min-height: 50vh;
 }
 iframe {
   border: 0;
@@ -52,6 +52,17 @@ iframe {
 
 /* || MEDIA QUERIES */
 @media screen and (max-width: 800px) {
+  #doc-main {
+    flex-direction: column;
+  }
+  .doc-sidebar {
+    height: 15rem;
+    overflow: auto;
+    border-color: transparent;
+  }
+  .doc-sidebar::-webkit-scrollbar {
+    display: none;
+  }
   .doc-section,
   .sidebar-list {
     margin: 0.5rem;
