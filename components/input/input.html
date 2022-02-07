@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../../assets/Wings.svg" />
+    <link rel="stylesheet" type="text/css" href="../../utilities/doc.css" />
+    <title>Wings UI | Input</title>
+  </head>
+  <body>
+    <header id="home-header" class="flex-row flex-space-btw">
+      <h1 class="home-header-title"><a href="/">WINGS UI</a></h1>
+      <nav class="home-nav flex-row">
+        <ul class="home-nav-list ls-none">
+          <li class="home-nav-item">
+            <a class="home-nav-link" href="/">Home</a>
+          </li>
+          <li class="home-nav-item">
+            <a class="home-nav-link nav-link-active" href="../alert/alert.html"
+              >Docs</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="doc-main" class="flex-row">
+      <aside class="doc-sidebar">
+        <ul class="sidebar-list ls-none mp-m">
+          <strong class="sidebar-header font-m">Components</strong>
+          <li class="sidebar-item mp-m">
+            <a href="../alert/alert.html" class="sidebar-link">Alert</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../avatar/avatar.html" class="sidebar-link">Avatar</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../badge/badge.html" class="sidebar-link">Badge</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../button/button.html" class="sidebar-link">Button</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../card/card.html" class="sidebar-link">Card</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../image/image.html" class="sidebar-link">Image</a>
+          </li>
+          <li
+            class="sidebar-item mp-m active-component"
+            style="background-color: var(--input-color)"
+          >
+            <a href="./input.html" class="sidebar-link">Input</a>
+          </li>
+        </ul>
+      </aside>
+      <section class="doc-section mp-m">
+        <h2 class="doc-header font-xl">Input</h2>
+        <p class="doc-text mpy-s">
+          Wing UI’s has simple input form and form fields with validation. These
+          form controls are easy to style using existing utilities.
+        </p>
+
+        <!-- || Input Form-->
+        <div
+          class="component-type mp-s"
+          style="border-color: var(--input-color)"
+        >
+          <h3 class="component-header font-l">Input Form</h3>
+          <p class="component-text mpy-s">
+            This is a simple input form to layout in order to get user reviews/
+            feedback /comments, etc.
+          </p>
+          <div class="component-display mp-m">
+            <form class="input-form">
+              <div class="form-field">
+                <label class="form-label required" for="name">Username </label>
+                <input
+                  class="form-input-field"
+                  id="name"
+                  type="text"
+                  placeholder="John Michael"
+                  required
+                />
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="feedback"
+                  >Please give your feedback 👇</label
+                >
+                <textarea
+                  class="form-textarea"
+                  id="feedback"
+                  type="text"
+                  placeholder="Enter your brief review"
+                ></textarea>
+              </div>
+              <button class="submit-btn" type="submit">Submit</button>
+            </form>
+          </div>
+          <p class="iframe-text mpy-xs">
+            Following code snap is here for your reference:
+          </p>
+          <div class="iframe-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%250A%2520%2520%2520%2520%2520%2520%253Cform%2520class%253D%2522input-form%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-field%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522form-label%2520required%2522%2520for%253D%2522name%2522%253EUsername%2520%253C%252Flabel%253E%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522form-input-field%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522name%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522John%2520Michael%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520required%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-field%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522form-label%2522%2520for%253D%2522feedback%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253EPlease%2520give%2520your%2520feedback%2520%25F0%259F%2591%2587%253C%252Flabel%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctextarea%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522form-textarea%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522feedback%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Enter%2520your%2520brief%2520review%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%253C%252Ftextarea%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522submit-btn%2522%2520type%253D%2522submit%2522%253ESubmit%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fform%253E%250A%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <!-- || Input Validation Form -->
+        <div class="component-type mp-s">
+          <h3 class="component-header font-l">Input Validation Form</h3>
+          <p class="component-text mpy-s">
+            This is a input validation form with all the types of validation of
+            fields used in, example- sign-in forms.
+          </p>
+          <div class="component-display mp-m">
+            <form novalidate class="input-form">
+              <div class="form-field">
+                <label class="form-label required" for="username"
+                  >Username
+                </label>
+                <input
+                  class="form-input-field"
+                  id="username"
+                  type="text"
+                  required
+                />
+                <p class="form-invalid-message">
+                  <i class="fas fa-info-circle"></i> Please enter your username!
+                </p>
+                <p class="form-valid-message">
+                  <i class="fas fa-check-circle"></i> That's right!
+                </p>
+              </div>
+              <div class="form-field">
+                <label class="form-label required" for="email">Email </label>
+                <input
+                  class="form-input-field"
+                  id="email"
+                  type="email"
+                  required
+                />
+                <p class="form-invalid-message">
+                  <i class="fas fa-info-circle"></i> Please enter correct email!
+                </p>
+                <p class="form-valid-message">
+                  <i class="fas fa-check-circle"></i> That's right!
+                </p>
+              </div>
+              <div class="form-field">
+                <label class="form-label required" for="password"
+                  >Password</label
+                >
+                <input
+                  class="form-input-field"
+                  id="password"
+                  type="password"
+                  placeholder="************"
+                  required
+                  minlength="6"
+                />
+                <p class="form-invalid-message">
+                  <i class="fas fa-info-circle"></i> Please enter atleast 6
+                  characters!
+                </p>
+                <p class="form-valid-message">
+                  <i class="fas fa-check-circle"></i> Strong password!
+                </p>
+              </div>
+              <div class="form-field">
+                <input
+                  class="form-checkbox"
+                  type="checkbox"
+                  id="terms"
+                  required
+                />
+                <label for="terms" class="form-label required"
+                  >Agree to terms and Services</label
+                >
+                <p class="form-checkbox-message">
+                  <i class="fas fa-info-circle"></i>
+                  You must agree before submitting!
+                </p>
+              </div>
+              <button class="submit-btn valid" type="submit">Sign Up</button>
+            </form>
+          </div>
+          <p class="iframe-text mpy-xs">
+            Following code snap is here for your reference:
+          </p>
+          <div class="iframe-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%253C%21--%2520HTML%2520CODE%2520--%253E%250A%250A%2520%2520%2520%253Cform%2520novalidate%2520class%253D%2522input-form%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-field%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522form-label%2520required%2522%2520for%253D%2522username%2522%253EUsername%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522form-input-field%2522%2520id%253D%2522username%2522%2520type%253D%2522text%2522%2520required%2520%252F%253E%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522form-invalid-message%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-info-circle%2522%253E%253C%252Fi%253E%2520Please%2520enter%2520your%2520username%21%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522form-valid-message%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%2520That%27s%2520right%21%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-field%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522form-label%2520required%2522%2520for%253D%2522email%2522%253EEmail%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522form-input-field%2522%2520id%253D%2522email%2522%2520type%253D%2522email%2522%2520required%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522form-invalid-message%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-info-circle%2522%253E%253C%252Fi%253E%2520Please%2520enter%2520correct%2520email%21%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522form-valid-message%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%2520That%27s%2520right%21%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-field%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522form-label%2520required%2522%2520for%253D%2522password%2522%253EPassword%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522form-input-field%2522%2520id%253D%2522password%2522%2520type%253D%2522password%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522************%2522%2520required%2520minlength%253D%25226%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522form-invalid-message%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-info-circle%2522%253E%253C%252Fi%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520Please%2520enter%2520atleast%25206%2520characters%21%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522form-valid-message%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%2520Strong%2520password%21%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-field%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522form-checkbox%2522%2520type%253D%2522checkbox%2522%2520id%253D%2522terms%2522%2520required%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522terms%2522%2520class%253D%2522form-label%2520required%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520Agree%2520to%2520terms%2520and%2520Services%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522form-checkbox-message%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-info-circle%2522%253E%253C%252Fi%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520You%2520must%2520agree%2520before%2520submitting%21%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522submit-btn%2520valid%2522%2520type%253D%2522submit%2522%253ESubmit%253C%252Fbutton%253E%250A%2520%2520%2520%253C%252Fform%253E%250A%250A%250A%2520%2520%253C%21--%2520JAVASCRIPT%2520CODE%2520--%253E%250A%250A%2520%2520%253Cscript%253E%250A%2520%2520%2520%2520const%2520forms%2520%253D%2520%255B...document.querySelectorAll%28%2522.input-form%2522%29%255D%253B%250A%2520%2520%2520%2520forms.forEach%28%28form%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520%2520%2520form.addEventListener%28%2522submit%2522%252C%2520%28e%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520if%2520%28%21form.checkValidity%28%29%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520e.preventDefault%28%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520form.classList.add%28%2522validate%2522%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%257D%29%253B%250A%2520%2520%2520%2520%257D%29%253B%250A%2520%2520%253C%252Fscript%253E%250A%250A"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      const forms = [...document.querySelectorAll(".input-form")];
+      forms.forEach((form) => {
+        form.addEventListener("submit", (e) => {
+          if (!form.checkValidity()) {
+            e.preventDefault();
+            form.classList.add("validate");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
+

@@ -1,0 +1,102 @@
+/* || ROOT CSS */
+:root {
+  --form-border-color: #d3d3d3;
+  --invalid-color: #b10000;
+  --valid-color: #007c00;
+  --asterisk-color: red;
+  --submit-btn-bg-color: #18388f;
+  --submit-btn-color: white;
+}
+
+/* || INPUT FORM */
+.input-form {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 2px solid var(--form-border-color);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+.form-field {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 1rem 0.5rem;
+}
+.form-label {
+  display: inline-block;
+  margin: 0.5rem;
+  min-width: 6rem;
+}
+.required:after {
+  content: "*";
+  color: var(--asterisk-color);
+}
+.form-input-field {
+  width: 14rem;
+  margin: 0 0.5rem;
+  padding: 0.2rem;
+}
+.form-textarea {
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  min-width: 14rem;
+  width: 70%;
+  height: 10rem;
+}
+.submit-btn {
+  align-self: center;
+  margin: 1.5rem 1rem;
+  padding: 0.3rem 0.8rem;
+  background-color: var(--submit-btn-bg-color);
+  color: var(--submit-btn-color);
+  border-color: transparent;
+  cursor: pointer;
+  border-radius: 0.3rem;
+}
+.submit-btn:hover {
+  background-color: var(--invalid-color);
+}
+
+/* || INPUT VALIDATION FORM */
+.form-invalid-message,
+.form-valid-message {
+  display: none;
+  position: absolute;
+  bottom: -1.3rem;
+  left: 7.6rem;
+}
+.form-checkbox-message {
+  display: none;
+  position: absolute;
+  top: 1.8rem;
+}
+.form-invalid-message,
+.form-checkbox-message {
+  color: var(--invalid-color);
+}
+.form-valid-message {
+  color: var(--valid-color);
+}
+.input-form.validate .form-input-field:invalid ~ .form-invalid-message {
+  display: block;
+}
+.input-form .form-input-field:valid ~ .form-valid-message {
+  display: block;
+}
+.input-form.validate .form-checkbox:not(:checked) ~ .form-checkbox-message {
+  display: block;
+}
+.input-form .form-checkbox:checked ~ .form-checkbox-message {
+  display: none;
+}
+
+/* || MEDIA QUERIES */
+@media screen and (max-width: 410px) {
+  .form-invalid-message,
+  .form-valid-message {
+    left: 0.5rem;
+  }
+}
+
