@@ -1,0 +1,11 @@
+/* || RESPONSIVE IMAGE */
+.img-responsive {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/* || ROUND IMAGE */
+.img-round {
+  border-radius: 50%;
+}
+
