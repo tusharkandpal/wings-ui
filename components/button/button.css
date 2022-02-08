@@ -1,0 +1,114 @@
+/* || ROOT CSS */
+:root {
+  --primary-bg-color: #60a5fa;
+  --primary-bg-hover-color: #4294f8;
+  --outline-hover-color: white;
+  --outline-basic-border-color: #78716c;
+  --outline-info-border-color: #fb923c;
+  --outline-danger-border-color: #dc2626;
+  --group-btn-bg-color: #d3d3d3;
+  --group-btn-active-color: black;
+  --float-btn-shadow-color: #00000066;
+  --btn-link-color: #3066db;
+}
+
+/* || PRIMARY BUTTON */
+.btn {
+  margin: 0.5rem;
+  background-color: transparent;
+  outline: transparent;
+  border-radius: 0.3rem;
+  border: 0;
+  text-align: center;
+  cursor: pointer;
+}
+.btn-sm {
+  padding: 0.5rem 1rem;
+}
+.btn-md {
+  padding: 0.5rem 2rem;
+}
+.btn-lg {
+  padding: 0.8rem 3.5rem;
+}
+.primary {
+  background-color: var(--primary-bg-color);
+}
+.primary:hover {
+  background-color: var(--primary-bg-hover-color);
+}
+
+/* || OUTLINE BUTTON */
+.outline {
+  border: 2px solid;
+}
+.outline:hover {
+  color: var(--outline-hover-color);
+}
+.outline-basic {
+  border-color: var(--outline-basic-border-color);
+}
+.outline-basic:hover {
+  background-color: var(--outline-basic-border-color);
+}
+.outline-info {
+  border-color: var(--outline-info-border-color);
+}
+.outline-info:hover {
+  background-color: var(--outline-info-border-color);
+}
+.outline-danger {
+  border-color: var(--outline-danger-border-color);
+}
+.outline-danger:hover {
+  background-color: var(--outline-danger-border-color);
+}
+
+/* || DISABLED BUTTON */
+.not-allowed {
+  cursor: not-allowed;
+}
+
+/* || ICON BUTTON */
+.btn-icon {
+  margin-right: 0.5rem;
+}
+
+/* || GROUP BUTTON */
+.btn-group {
+  display: inline-flex;
+  margin: 0.5rem 1rem;
+}
+.btn-left,
+.btn-right {
+  background-color: var(--group-btn-bg-color);
+  margin: 0.05rem;
+}
+.btn-left:active,
+.btn-right:active {
+  outline: 2px solid var(--group-btn-active-color);
+}
+
+/* || FLOAT BUTTON */
+.btn-float {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--primary-bg-color);
+  border: none;
+  filter: drop-shadow(0 0 0.5rem var(--float-btn-shadow-color));
+  transition: transform 0.2s;
+}
+.btn-float:hover {
+  transition: transform 0.2s;
+  transform: translateY(-0.2rem);
+}
+
+/* || LINK BUTTON */
+.btn-link {
+  color: var(--btn-link-color);
+}
+.btn-link:hover {
+  text-decoration: underline;
+}
+
