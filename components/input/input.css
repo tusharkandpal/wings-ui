@@ -9,7 +9,7 @@
 }
 
 /* || INPUT FORM */
-.input-form {
+.form-container {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -33,7 +33,7 @@
   content: "*";
   color: var(--asterisk-color);
 }
-.form-input-field {
+.form-input {
   width: 14rem;
   margin: 0 0.5rem;
   padding: 0.2rem;
@@ -79,16 +79,16 @@
 .form-valid-message {
   color: var(--valid-color);
 }
-.input-form.validate .form-input-field:invalid ~ .form-invalid-message {
+.form-container.validate .form-input:invalid ~ .form-invalid-message {
   display: block;
 }
-.input-form .form-input-field:valid ~ .form-valid-message {
+.form-container .form-input:valid ~ .form-valid-message {
   display: block;
 }
-.input-form.validate .form-checkbox:not(:checked) ~ .form-checkbox-message {
+.form-container.validate .form-checkbox:not(:checked) ~ .form-checkbox-message {
   display: block;
 }
-.input-form .form-checkbox:checked ~ .form-checkbox-message {
+.form-container .form-checkbox:checked ~ .form-checkbox-message {
   display: none;
 }
 
