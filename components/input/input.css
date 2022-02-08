@@ -29,7 +29,7 @@
   margin: 0.5rem;
   min-width: 6rem;
 }
-.required:after {
+.required::after {
   content: "*";
   color: var(--asterisk-color);
 }
