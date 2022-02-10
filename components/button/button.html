@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../../assets/Wings.svg" />
+    <link rel="stylesheet" href="../../utilities/doc.css" />
+    <title>Wings UI | Button</title>
+  </head>
+  <body>
+    <header id="home-header" class="flex-row flex-space-btw">
+      <h1 class="home-header-title"><a href="/">WINGS UI</a></h1>
+      <nav class="home-nav flex-row">
+        <ul class="home-nav-list ls-none">
+          <li class="home-nav-item">
+            <a class="home-nav-link" href="/">Home</a>
+          </li>
+          <li class="home-nav-item">
+            <a class="home-nav-link nav-link-active" href="../alert/alert.html"
+              >Docs</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="doc-main" class="flex-row">
+      <aside class="doc-sidebar">
+        <ul class="sidebar-list ls-none mp-m">
+          <li class="sidebar-header font-m"><strong>Components</strong></li>
+          <li class="sidebar-item mp-m">
+            <a href="../alert/alert.html" class="sidebar-link">Alert</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../avatar/avatar.html" class="sidebar-link">Avatar</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../badge/badge.html" class="sidebar-link">Badge</a>
+          </li>
+          <li
+            class="sidebar-item mp-m active-component"
+            style="background-color: var(--button-color)"
+          >
+            <a href="./button.html" class="sidebar-link">Button</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../card/card.html" class="sidebar-link">Card</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../image/image.html" class="sidebar-link">Image</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../input/input.html" class="sidebar-link">Input</a>
+          </li>
+        </ul>
+      </aside>
+      <section class="doc-section mp-m">
+        <h2 class="doc-header font-xl">Button</h2>
+        <p class="doc-text mpy-s">
+          The button component is probably the most widely used element in any
+          user interface or website as it can be used to launch an action but
+          also to link to other pages.
+        </p>
+
+        <!-- || Primary Button -->
+        <div
+          class="component-type mp-s"
+          style="border-color: var(--button-color)"
+        >
+          <h3 class="component-header font-l">Primary Button</h3>
+          <p class="component-text mpy-s">
+            Use these default button styles to indicate a primary/ call to
+            action within your website.
+          </p>
+          <div class="component-display mp-m">
+            <button type="button" class="btn btn-sm primary">Primary</button>
+            <button type="button" class="btn btn-md primary">Buy Now</button>
+            <button type="button" class="btn btn-lg primary">Success</button>
+          </div>
+          <p class="iframe-text mpy-xs">
+            Following code snap is here for your reference:
+          </p>
+          <div class="iframe-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=753&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%250A%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-sm%2520primary%2522%253EPrimary%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-md%2520primary%2522%253EBuy%2520Now%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-lg%2520primary%2522%253ESuccess%253C%252Fbutton%253E%250A%250A%250A"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <!-- || Outline Button -->
+        <div
+          class="component-type mp-s"
+          style="border-color: var(--button-color)"
+        >
+          <h3 class="component-header font-l">Outline Button</h3>
+          <p class="component-text mpy-s">
+            Replace the basic buttons with these to outshine the differences.
+          </p>
+          <div class="component-display mp-m">
+            <button type="button" class="btn btn-md outline outline-basic">
+              Secondary
+            </button>
+            <button type="button" class="btn btn-md outline outline-info">
+              Add to Wishlist
+            </button>
+            <button type="button" class="btn btn-md outline outline-danger">
+              Cancel
+            </button>
+          </div>
+          <p class="iframe-text mpy-xs">
+            Following code snap is here for your reference:
+          </p>
+          <div class="iframe-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=762.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%250A%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-md%2520outline%2520outline-basic%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520Secondary%2520%250A%2509%2520%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-md%2520outline%2520outline-info%2522%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520Add%2520to%2520Wishlist%250A%2509%2520%253C%252Fbutton%253E%2520%2520%2520%2520%2520%250A%250A%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-md%2520outline%2520outline-danger%2522%253E%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520Cancel%2520%250A%2509%2520%253C%252Fbutton%253E%250A%250A"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <!-- || Disabled Button -->
+        <div
+          class="component-type mp-s"
+          style="border-color: var(--button-color)"
+        >
+          <h3 class="component-header font-l">Disabled Button</h3>
+          <p class="component-text mpy-s">
+            Used to show a negative scenario or action i.e not applicable ones.
+          </p>
+          <div class="component-display mp-m">
+            <button
+              type="button"
+              class="btn btn-md primary not-allowed"
+              disabled
+            >
+              Primary
+            </button>
+            <button
+              type="button"
+              class="btn btn-md outline outline-basic not-allowed"
+              disabled
+            >
+              Secondary
+            </button>
+          </div>
+          <p class="iframe-text mpy-xs">
+            Following code snap is here for your reference:
+          </p>
+          <div class="iframe-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%250A%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-md%2520primary%2520not-allowed%2522%2520disabled%253E%2520%250A%2520%2520%2520%2520%2520%2520Primary%250A%2509%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-md%2520outline%2520outline-basic%2520not-allowed%2522%2520dsiabled%253E%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520Secondary%250A%2509%253C%252Fbutton%253E%2520%250A%250A"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <!-- || Icon Button -->
+        <div
+          class="component-type mp-s"
+          style="border-color: var(--button-color)"
+        >
+          <h3 class="component-header font-l">Icon Button</h3>
+          <p class="component-text mpy-s">
+            Icon buttons can be used to showcase a brief idea about an action
+            using icons with it.
+          </p>
+          <div class="component-display mp-m">
+            <button type="button" class="btn btn-md primary">
+              <i class="fas fa-shopping-cart btn-icon"></i> Add to cart
+            </button>
+            <button type="button" class="btn btn-md primary">
+              <i class="fas fa-heart btn-icon"></i> Add to Wishlist
+            </button>
+            <button type="button" class="btn btn-sm outline outline-danger">
+              <i class="fas fa-times btn-icon"></i> Cancel
+            </button>
+          </div>
+          <p class="iframe-text mpy-xs">
+            Following code snap is here for your reference:
+          </p>
+          <div class="iframe-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=762.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%250A%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-md%2520primary%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2520btn-icon%2522%253E%253C%252Fi%253E%2520%250A%2520%2520%2520%2520%2520%2520Add%2520to%2520cart%2520%250A%2509%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-md%2520primary%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520btn-icon%2522%253E%253C%252Fi%253E%2520%250A%2520%2520%2520%2520%2520%2520Add%2520to%2520Wishlist%2520%250A%2509%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-sm%2520outline%2520outline-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520btn-icon%2522%253E%253C%252Fi%253E%2520%250A%2520%2520%2520%2520%2520%2520Cancel%2520%250A%2509%253C%252Fbutton%253E%250A%250A%250A"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <!-- || Group Button -->
+        <div
+          class="component-type mp-s"
+          style="border-color: var(--button-color)"
+        >
+          <h3 class="component-header font-l">Group Button</h3>
+          <p class="component-text mpy-s">
+            For navigation use cases, nothing better than group buttons.
+          </p>
+          <div class="component-display mp-m">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-left">prev</button>
+              <button type="button" class="btn btn-sm btn-right">next</button>
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-left">
+                <i class="fas fa-caret-left"></i>
+              </button>
+              <button type="button" class="btn btn-sm btn-right">
+                <i class="fas fa-caret-right"></i>
+              </button>
+            </div>
+          </div>
+          <p class="iframe-text mpy-xs">
+            Following code snap is here for your reference:
+          </p>
+          <div class="iframe-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=762.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522btn-group%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-sm%2520btn-left%2522%253Eprev%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-sm%2520btn-right%2522%253Enext%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522btn-group%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-sm%2520btn-left%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-caret-left%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-sm%2520btn-right%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-caret-right%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <!-- || Floating Button -->
+        <div
+          class="component-type mp-s"
+          style="border-color: var(--button-color)"
+        >
+          <h3 class="component-header font-l">Floating Button</h3>
+          <p class="component-text mpy-s">
+            Adds a floating effect along with an action button.
+          </p>
+          <div class="component-display mp-m">
+            <button type="button" class="btn btn-sm btn-float">
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+            <button type="button" class="btn btn-sm btn-float">
+              <i class="fas fa-heart"></i>
+            </button>
+            <button type="button" class="btn btn-sm btn-float">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <p class="iframe-text mpy-xs">
+            Following code snap is here for your reference:
+          </p>
+          <div class="iframe-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=762.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-sm%2520btn-float%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-sm%2520btn-float%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-sm%2520btn-float%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%250A%250A"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <!-- || Link Button -->
+        <div class="component-type mp-s">
+          <h3 class="component-header font-l">Link Button</h3>
+          <p class="component-text mpy-s">
+            Links inside a button for redirecting to a url or another page.
+          </p>
+          <div class="component-display mp-m">
+            <button type="button" class="btn">
+              <a href="#link" class="btn-link">Primary link</a>
+            </button>
+            <button type="button" class="btn">
+              <a href="#link" class="btn-link">Secondary link</a>
+            </button>
+          </div>
+          <p class="iframe-text mpy-xs">
+            Following code snap is here for your reference:
+          </p>
+          <div class="iframe-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=762.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523link%2522%2520class%253D%2522btn-link%2522%253EPrimary%2520link%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523link%2522%2520class%253D%2522btn-link%2522%253ESecondary%2520link%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%250A%250A"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+
