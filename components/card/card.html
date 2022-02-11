@@ -17,7 +17,9 @@
             <a class="home-nav-link" href="/">Home</a>
           </li>
           <li class="home-nav-item">
-            <a class="home-nav-link nav-link-active" href="../alert/alert.html">Docs</a>
+            <a class="home-nav-link nav-link-active" href="../alert/alert.html"
+              >Docs</a
+            >
           </li>
         </ul>
       </nav>
@@ -39,7 +41,10 @@
           <li class="sidebar-item mp-m">
             <a href="../button/button.html" class="sidebar-link">Button</a>
           </li>
-          <li class="sidebar-item mp-m active-component" style="background-color: var(--card-color);">
+          <li
+            class="sidebar-item mp-m active-component"
+            style="background-color: var(--card-color)"
+          >
             <a href="./card.html" class="sidebar-link">Card</a>
           </li>
           <li class="sidebar-item mp-m">
@@ -58,39 +63,43 @@
         </p>
 
         <!-- || Basic Card -->
-        <div class="component-type mp-s" style='border-color: var(--card-color);'>
+        <div
+          class="component-type mp-s"
+          style="border-color: var(--card-color)"
+        >
           <h3 class="component-header font-l">Basic Card</h3>
           <p class="component-text mpy-s">
-            Card vertical are along with an image, a caption, its author,
-            redirecting links & action icons.
+            Basic card represents a vertical orientation along with an image, a
+            title, sub-title, price & call-to-action buttons.
           </p>
           <div class="component-display mp-m">
             <div class="card card-vertical">
-              <div class="card-details-container">
-                <div class="card-details">
-                  <h3 class="card-title">Card's Title</h3>
-                  <small class="card-author">by author</small>
-                </div>
-                <img
-                  class="card-img"
-                  src="https://images.unsplash.com/photo-1611273651216-29b4f282d36b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-                  alt="card"
-                />
+              <img
+                class="card-img"
+                src="../../assets/card-product.webp"
+                alt="card"
+              />
+              <div class="card-details">
+                <h3 class="card-title">HRX by Hrithik Roshan</h3>
+                <small class="card-sub-title"
+                  >Men White & Black Board Life Sneakers</small
+                >
               </div>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Tenetur aperiam
-              </p>
-              <div class="card-action-items">
-                <div class="card-links">
-                  <a href="/" class="card-link">Read</a>
-                  <a href="/" class="card-link">Bookmark</a>
-                </div>
-                <div class="card-buttons">
-                  <i class="far fa-heart card-icon"></i>
-                  <i class="fas fa-share-alt card-icon"></i>
-                  <i class="fas fa-ellipsis-v card-icon"></i>
-                </div>
+              <div class="card-price-section">
+                <strong class="selling-price">₹ 3980</strong>
+                <small class="original-price">₹ 4500</small>
+                <p class="discount">(44% off)</p>
+              </div>
+              <div class="card-buttons">
+                <button type="button" class="btn btn-sm primary">
+                  <i class="fas fa-shopping-cart btn-icon"></i> Add to cart
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-sm outline outline-info card-icon"
+                >
+                  <i class="fa-regular fa-heart btn-icon"></i> Wishlist
+                </button>
               </div>
             </div>
           </div>
@@ -99,43 +108,53 @@
           </p>
           <div class="iframe-container">
             <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%250A%2520%2520%253Cdiv%2520class%253D%2522card%2520card-vertical%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-details-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-details%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ECard%27s%2520Title%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522card-author%2522%253Eby%2520author%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-img%2522%2520src%253D%2522img-url%2522%2520alt%253D%2522card%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522card-text%2522%253E%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%252C%2520adipisicing%2520elit.%2520Tenetur%2520aperiam%253C%252Fp%253E%2520%2520%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-action-items%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-links%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%252F%2522%2520class%253D%2522card-link%2522%253E%2520Read%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%252F%2522%2520class%253D%2522card-link%2522%253E%2520Bookmark%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-buttons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A"
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=762.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2520card-vertical%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-img%2522%2520src%253D%2522img-url%2522%2520alt%253D%2522card%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-details%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253EHRX%2520by%2520Hrithik%2520Roshan%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522card-sub-title%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Men%2520White%2520%2526%2520Black%2520Board%2520Life%2520Sneakers%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-price-section%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%2520class%253D%2522selling-price%2522%253E%25E2%2582%25B9%25203980%253C%252Fstrong%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522original-price%2522%253E%25E2%2582%25B9%25204500%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522discount%2522%253E%2844%2525%2520off%29%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-buttons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-sm%2520primary%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2520btn-icon%2522%253E%253C%252Fi%253E%2520Add%2520to%2520cart%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-sm%2520outline%2520outline-info%2520card-icon%2522%253E%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-regular%2520fa-heart%2520btn-icon%2522%253E%253C%252Fi%253E%2520Wishlist%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%250A"
               sandbox="allow-scripts allow-same-origin"
             >
             </iframe>
           </div>
         </div>
 
-        <!-- || Card without description -->
-        <div class="component-type mp-s" style='border-color: var(--card-color);'>
-          <h3 class="component-header font-l">Card without description</h3>
+        <!-- || Card with badges -->
+        <div
+          class="component-type mp-s"
+          style="border-color: var(--card-color)"
+        >
+          <h3 class="component-header font-l">Card with badges</h3>
           <p class="component-text mpy-s">
-            A few other options for laying out series of cards. Can be used for
-            minimiliastic design & perfect for display purpose.
+            A card option to add a badge for ease of choice to user.
           </p>
           <div class="component-display mp-m">
             <div class="card card-vertical">
-              <div class="card-details-container">
+              <div class="card-overlay-container">
                 <img
                   class="card-img"
-                  src="https://images.unsplash.com/photo-1611273651216-29b4f282d36b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+                  src="../../assets/card-product.webp"
                   alt="card"
                 />
-                <div class="card-details">
-                  <h3 class="card-title">Card's Title</h3>
-                  <small class="card-author">by author</small>
-                </div>
+                <small class="card-badge">Trending</small>
               </div>
-              <div class="card-action-items">
-                <div class="card-links">
-                  <a href="/" class="card-link">Read</a>
-                  <a href="/" class="card-link">Bookmark</a>
-                </div>
-                <div class="card-buttons">
-                  <i class="far fa-heart card-icon"></i>
-                  <i class="fas fa-share-alt card-icon"></i>
-                  <i class="fas fa-ellipsis-v card-icon"></i>
-                </div>
+              <div class="card-details">
+                <h3 class="card-title">HRX by Hrithik Roshan</h3>
+                <small class="card-sub-title"
+                  >Men White & Black Board Life Sneakers</small
+                >
+              </div>
+              <div class="card-price-section">
+                <strong class="selling-price">₹ 3980</strong>
+                <small class="original-price">₹ 4500</small>
+                <p class="discount">(44% off)</p>
+              </div>
+              <div class="card-buttons">
+                <button type="button" class="btn btn-sm primary">
+                  <i class="fas fa-shopping-cart btn-icon"></i> Add to cart
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-sm outline outline-info card-icon"
+                >
+                  <i class="fa-regular fa-heart btn-icon"></i> Wishlist
+                </button>
               </div>
             </div>
           </div>
@@ -144,7 +163,7 @@
           </p>
           <div class="iframe-container">
             <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%250A%2509%253Cdiv%2520class%253D%2522card%2520card-vertical%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-details-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-img%2522%2520src%253D%2522img-url%2522%2520alt%253D%2522card%2522%2520%252F%253E%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-details%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ECard%27s%2520Title%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522card-author%2522%253Eby%2520author%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-action-items%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-links%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%252F%2522%2520class%253D%2522card-link%2522%253E%2520Read%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%252F%2522%2520class%253D%2522card-link%2522%253E%2520Bookmark%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-buttons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A"
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=762.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2520card-vertical%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-overlay-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-img%2522%2520src%253D%2522img-url%2522%2520alt%253D%2522card%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522card-badge%2522%253ETrending%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-details%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253EHRX%2520by%2520Hrithik%2520Roshan%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522card-sub-title%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Men%2520White%2520%2526%2520Black%2520Board%2520Life%2520Sneakers%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-price-section%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%2520class%253D%2522selling-price%2522%253E%25E2%2582%25B9%25203980%253C%252Fstrong%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522original-price%2522%253E%25E2%2582%25B9%25204500%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522discount%2522%253E%2844%2525%2520off%29%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-buttons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-sm%2520primary%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2520btn-icon%2522%253E%253C%252Fi%253E%2520Add%2520to%2520cart%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-sm%2520outline%2520outline-info%2520card-icon%2522%253E%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-regular%2520fa-heart%2520btn-icon%2522%253E%253C%252Fi%253E%2520Wishlist%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%250A"
               sandbox="allow-scripts allow-same-origin"
             >
             </iframe>
@@ -152,36 +171,52 @@
         </div>
 
         <!-- || Card with Overlay Title -->
-        <div class="component-type mp-s" style='border-color: var(--card-color);'>
+        <div
+          class="component-type mp-s"
+          style="border-color: var(--card-color)"
+        >
           <h3 class="component-header font-l">Card with Overlay Title</h3>
           <p class="component-text mpy-s">
             Turn an image into a card background and overlay your card’s text.
-            Depending on the image, you may or may not need additional styles or
-            utilities.
           </p>
           <div class="component-display mp-m">
             <div class="card card-vertical">
-              <div class="card-overlay-container">
+              <div class="card-overlay-container card-opacity">
                 <img
                   class="card-img"
-                  src="https://images.unsplash.com/photo-1611273651216-29b4f282d36b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+                  src="../../assets/card-product.webp"
                   alt="card"
                 />
                 <div class="card-overlay-details">
-                  <h3 class="card-overlay-title">Card's Title</h3>
-                  <small class="card-overlay-author">by author</small>
+                  <h3 class="card-overlay-title">OUT OF STOCK</h3>
                 </div>
               </div>
-              <div class="card-action-items">
-                <div class="card-links">
-                  <a href="/" class="card-link">Read</a>
-                  <a href="/" class="card-link">Bookmark</a>
-                </div>
-                <div class="card-buttons">
-                  <i class="far fa-heart card-icon"></i>
-                  <i class="fas fa-share-alt card-icon"></i>
-                  <i class="fas fa-ellipsis-v card-icon"></i>
-                </div>
+              <div class="card-details">
+                <h3 class="card-title">HRX by Hrithik Roshan</h3>
+                <small class="card-sub-title"
+                  >Men White & Black Board Life Sneakers</small
+                >
+              </div>
+              <div class="card-price-section">
+                <strong class="selling-price">₹ 3980</strong>
+                <small class="original-price">₹ 4500</small>
+                <p class="discount">(44% off)</p>
+              </div>
+              <div class="card-buttons">
+                <button
+                  type="button"
+                  class="btn btn-sm primary not-allowed"
+                  disabled
+                >
+                  <i class="fas fa-shopping-cart btn-icon"></i> Add to cart
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-sm outline outline-info card-icon not-allowed"
+                  disabled
+                >
+                  <i class="fa-regular fa-heart btn-icon"></i> Wishlist
+                </button>
               </div>
             </div>
           </div>
@@ -190,7 +225,7 @@
           </p>
           <div class="iframe-container">
             <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2520card-vertical%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-overlay-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-img%2522%2520src%253D%2522img-url%2522%2520alt%253D%2522card%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-overlay-details%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-overlay-title%2522%253ECard%27s%2520Title%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522card-overlay-author%2522%253Eby%2520author%253C%252Fsmall%253E%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-action-items%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-links%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%252F%2522%2520class%253D%2522card-link%2522%253ERead%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%252F%2522%2520class%253D%2522card-link%2522%253EBookmark%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-buttons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%250A"
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=762.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2520card-vertical%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-overlay-container%2520card-opacity%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-img%2522%2520src%253D%2522img-url%2522%2520alt%253D%2522card%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-overlay-details%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-overlay-title%2522%253EOUT%2520OF%2520STOCK%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-details%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253EHRX%2520by%2520Hrithik%2520Roshan%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522card-sub-title%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Men%2520White%2520%2526%2520Black%2520Board%2520Life%2520Sneakers%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-price-section%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%2520class%253D%2522selling-price%2522%253E%25E2%2582%25B9%25203980%253C%252Fstrong%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522original-price%2522%253E%25E2%2582%25B9%25204500%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522discount%2522%253E%2844%2525%2520off%29%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-buttons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-sm%2520primary%2520not-allowed%2522%2520disabled%253E%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2520btn-icon%2522%253E%253C%252Fi%253E%2520Add%2520to%2520cart%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522btn%2520btn-sm%2520outline%2520outline-info%2520card-icon%2520not-allowed%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520disabled%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-regular%2520fa-heart%2520btn-icon%2522%253E%253C%252Fi%253E%2520Wishlist%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%250A"
               sandbox="allow-scripts allow-same-origin"
             >
             </iframe>
@@ -198,38 +233,58 @@
         </div>
 
         <!-- || Horizontal Card-->
-        <div class="component-type mp-s" style='border-color: var(--card-color);'>
+        <div
+          class="component-type mp-s"
+          style="border-color: var(--card-color)"
+        >
           <h3 class="component-header font-l">Horizontal Card</h3>
           <p class="component-text mpy-s">
             Using these utility classes, cards can be made horizontal in a
-            mobile-friendly and responsive way.
+            responsive way.
           </p>
           <div class="component-display mp-m">
             <div class="card card-horizontal">
+              <img
+                class="card-img card-img-horizontal"
+                src="../../assets/card-product.webp"
+                alt="card"
+              />
               <div class="card-details-horizontal">
-                <img
-                  class="card-img-horizontal"
-                  src="https://images.unsplash.com/photo-1611273651216-29b4f282d36b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-                  alt="card"
-                />
                 <div class="card-details">
-                  <h3 class="card-title">Card's Title</h3>
-                  <small class="card-author">by author</small>
+                  <h3 class="card-title">HRX by Hrithik Roshan</h3>
+                  <small class="card-sub-title"
+                    >Men White & Black Board Life Sneakers</small
+                  >
                 </div>
-              </div>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Tenetur aperiam
-              </p>
-              <div class="card-action-items">
-                <div class="card-links">
-                  <a href="/" class="card-link">Read</a>
-                  <a href="/" class="card-link">Bookmark</a>
+                <div class="card-price-section">
+                  <strong class="selling-price">₹ 3980</strong>
+                  <small class="original-price">₹ 4500</small>
+                  <p class="discount">(44% off)</p>
                 </div>
-                <div class="card-buttons">
-                  <i class="far fa-heart card-icon"></i>
-                  <i class="fas fa-share-alt card-icon"></i>
-                  <i class="fas fa-ellipsis-v card-icon"></i>
+
+                <div class="card-quantity">
+                  <p>
+                    Quantity:
+                    <button type="button" class="card-quantity-btn">
+                      <i class="fa-solid fa-minus"></i>
+                    </button>
+                    <input type="text" class="quantity-value" value="1" />
+                    <button type="button" class="card-quantity-btn">
+                      <i class="fa-solid fa-plus"></i>
+                    </button>
+                  </p>
+                </div>
+                <div class="card-horizontal-buttons">
+                  <button type="button" class="btn btn-lg primary card-btn">
+                    <i class="fa-solid fa-trash btn-icon"></i> Remove from cart
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-lg outline outline-info card-btn"
+                  >
+                    <i class="fa-regular fa-heart btn-icon"></i> Move to
+                    wishlist
+                  </button>
                 </div>
               </div>
             </div>
@@ -239,43 +294,59 @@
           </p>
           <div class="iframe-container">
             <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%250A%2520%2520%253Cdiv%2520class%253D%2522card%2520card-horizontal%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-details-horizontal%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-img-horizontal%2522%2520src%253D%2522img-url%2522%2520alt%253D%2522card%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-details%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ECard%27s%2520Title%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522card-author%2522%253Eby%2520author%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522card-text%2522%253E%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%252C%2520adipisicing%2520elit.%2520Tenetur%2520aperiam%253C%252Fp%253E%2520%2520%2520%2520%2509%2520%2520%2520%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-action-items%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-links%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%252F%2522%2520class%253D%2522card-link%2522%253ERead%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%252F%2522%2520class%253D%2522card-link%2522%253EBookmark%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-buttons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A"
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=762.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2520card-horizontal%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-img%2520card-img-horizontal%2522%2520src%253D%2522img-url%2522%2520alt%253D%2522card%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-details-horizontal%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-details%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253EHRX%2520by%2520Hrithik%2520Roshan%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522card-sub-title%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Men%2520White%2520%2526%2520Black%2520Board%2520Life%2520Sneakers%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-price-section%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%2520class%253D%2522selling-price%2522%253E%25E2%2582%25B9%25203980%253C%252Fstrong%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522original-price%2522%253E%25E2%2582%25B9%25204500%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522discount%2522%253E%2844%2525%2520off%29%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-quantity%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%2520Quantity%253A%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522card-quantity-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-minus%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522quantity-value%2522%2520value%253D%25221%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522card-quantity-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-plus%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-horizontal-buttons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-lg%2520primary%2520card-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-trash%2520btn-icon%2522%253E%253C%252Fi%253E%2520Remove%2520from%2520cart%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-lg%2520outline%2520outline-info%2520card-btn%2522%253E%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-regular%2520fa-heart%2520btn-icon%2522%253E%253C%252Fi%253E%2520Move%2520to%2520wishlist%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%250A"
               sandbox="allow-scripts allow-same-origin"
             >
             </iframe>
           </div>
         </div>
 
-        <!-- || Horizontal Card without Image-->
+        <!-- || Horizontal Card with Text only-->
         <div class="component-type mp-s">
-          <h3 class="component-header font-l">Horizontal Card without Image</h3>
+          <h3 class="component-header font-l">
+            Horizontal Card with Text only
+          </h3>
           <p class="component-text mpy-s">
-            Another option to layout a horizontal card with just the required
+            Another option to layout a horizontal card with just the text
             information.
           </p>
           <div class="component-display mp-m">
-            <div class="card card-horizontal">
-              <div class="card-details-horizontal">
-                <div class="card-details">
-                  <h3 class="card-title">Card's Title</h3>
-                  <small class="card-author">by author</small>
-                </div>
-              </div>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Tenetur aperiam
+            <div class="card card-text-only">
+              <h3 class="card-text-title">PRICE DETAILS</h3>
+              <hr class="line-separate" />
+              <p class="card-text-item">
+                <span class="card-text-label"
+                  >Price (<span>2</span> items)</span
+                >
+                <span>₹4000</span>
               </p>
-              <div class="card-action-items">
-                <div class="card-links">
-                  <a href="/" class="card-link">Read</a>
-                  <a href="/" class="card-link">Bookmark</a>
-                </div>
-                <div class="card-buttons">
-                  <i class="far fa-heart card-icon"></i>
-                  <i class="fas fa-share-alt card-icon"></i>
-                  <i class="fas fa-ellipsis-v card-icon"></i>
-                </div>
-              </div>
+              <p class="card-text-item">
+                <span class="card-text-label">Discount</span>
+                <span class="discount-charges">- ₹400</span>
+              </p>
+              <p class="card-text-item">
+                <span class="card-text-label">Delivery charges</span>
+                <span>
+                  <span class="original-price">199</span>
+                  <span class="discount-charges">Free</span>
+                </span>
+              </p>
+              <hr class="line-separate" />
+              <p class="card-text-item">
+                <span class="card-text-label"
+                  ><strong>TOTAL AMOUNT</strong></span
+                >
+                <span>₹4000</span>
+              </p>
+              <hr class="line-separate" />
+              <p class="card-text-label">
+                You have saved
+                <strong class="discount-charges">₹ 599</strong> on this
+                purchase.
+              </p>
+              <button type="button" class="btn btn-lg primary">
+                <i class="fa-solid fa-bag-shopping btn-icon"></i> Place Order
+              </button>
             </div>
           </div>
           <p class="iframe-text mpy-xs">
@@ -283,7 +354,7 @@
           </p>
           <div class="iframe-container">
             <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-horizontal%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-details-horizontal%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-details%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ECard%27s%2520Title%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522card-author%2522%253Eby%2520author%253C%252Fsmall%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cp%2520class%253D%2522card-text%2522%253E%250A%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%252C%2520adipisicing%2520elit.%2520Tenetur%2520aperiam%250A%2520%2520%253C%252Fp%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-action-items%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-links%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%252F%2522%2520class%253D%2522card-link%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Read%250A%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%252F%2522%2520class%253D%2522card-link%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Bookmark%250A%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-buttons%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=762.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2520card-text-only%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-text-title%2522%253EPRICE%2520DETAILS%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Chr%2520class%253D%2522line-separate%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-text-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-text-label%2522%253EPrice%2520%28%2520%253Cspan%253E2%253C%252Fspan%253E%2520items%29%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%25E2%2582%25B94000%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-text-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-text-label%2522%253EDiscount%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522discount-charges%2522%253E-%2520%25E2%2582%25B9400%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-text-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-text-label%2522%253EDelivery%2520charges%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522original-price%2522%253E199%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522discount-charges%2522%253EFree%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Chr%2520class%253D%2522line-separate%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-text-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-text-label%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%253ETOTAL%2520AMOUNT%253C%252Fstrong%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%25E2%2582%25B94000%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Chr%2520class%253D%2522line-separate%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-text-label%2522%253E%2520You%2520have%2520saved%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%2520class%253D%2522discount-charges%2522%253E%25E2%2582%25B9%2520599%253C%252Fstrong%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520on%2520this%2520purchase.%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-lg%2520primary%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-bag-shopping%2520btn-icon%2522%253E%253C%252Fi%253E%2520Place%2520Order%2520%253C%252Fbutton%253E%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%250A"
               sandbox="allow-scripts allow-same-origin"
             >
             </iframe>
@@ -293,3 +364,4 @@
     </main>
   </body>
 </html>
+
