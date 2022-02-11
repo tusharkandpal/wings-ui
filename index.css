@@ -9,11 +9,9 @@
   margin-top: 0;
   padding-top: 0;
 }
-
 .section-text-highlight {
   color: var(--secondary-color);
 }
-
 .section-link {
   background-color: var(--secondary-color);
   text-decoration: none;
@@ -23,14 +21,21 @@
   cursor: pointer;
   color: black;
 }
-
 .section-link:hover {
   background-color: var(--primary-color);
 }
-
 .section-img {
   max-width: 100%;
   width: 65rem;
+}
+
+/* || START SECTION */
+.start-section-heading {
+  background-color: var(--secondary-color);
+  border-radius: 0.3rem;
+}
+.start-section-content {
+  background: url('./assets/career-progress.svg') no-repeat center center/cover;
 }
 
 /* || MEDIA QUERIES */

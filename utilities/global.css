@@ -25,6 +25,19 @@ a {
   text-decoration: none;
   color: black;
 }
+.iframe-container {
+  position: relative;
+  overflow: auto;
+  min-height: 50vh;
+}
+iframe {
+  border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1000px;
+  height: 100%;
+}
 
 /* || RESPONSIVE IMAGE */
 .img-box {

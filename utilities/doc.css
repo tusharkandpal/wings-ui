@@ -28,19 +28,7 @@
 .doc-section {
   flex: 1;
 }
-.iframe-container {
-  position: relative;
-  overflow: auto;
-  min-height: 50vh;
-}
-iframe {
-  border: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1000px;
-  height: 100%;
-}
+
 
 /* || COMPONENT CSS */
 .active-component {
