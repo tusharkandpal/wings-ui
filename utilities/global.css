@@ -12,18 +12,33 @@
   padding: 0;
 }
 
+/* || ROOT CSS */
 :root {
   font-size: 18px;
   font-family: "Belleza", sans-serif;
   --primary-color: #cfbaf0;
   --secondary-color: #ff6584;
   --font-color: #9b9b9b;
+  --link-color: black;
 }
 
 a {
   display: inline-block;
   text-decoration: none;
-  color: black;
+  color: var(--link-color);
+}
+.iframe-container {
+  position: relative;
+  overflow: auto;
+  min-height: 50vh;
+}
+iframe {
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 55.5rem;
+  height: 100%;
 }
 
 /* || RESPONSIVE IMAGE */
