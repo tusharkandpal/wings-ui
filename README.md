@@ -41,10 +41,11 @@ A customizable, robust, & accessible library of various components enabling you 
 
 - [Card](https://wings-ui.netlify.app/components/card/card.html)
     - Basic Card
-    - Card with badges
-    - Card with Overlay Title
+    - Card with Badges
+    - Card with Dismiss
+    - Card with Text Overlay
     - Horizontal Card
-    - Horizontal Card with Text only
+    - Horizontal Card with Text Only
 
 - [Image](https://wings-ui.netlify.app/components/image/image.html)
     - Responsive Image

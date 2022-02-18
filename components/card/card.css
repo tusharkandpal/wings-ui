@@ -7,6 +7,7 @@
   --card-badge-color: #4294f8;
   --card-overlay-color: white;
   --card-overlay-bg-color: black;
+  --card-dismiss-color: #c50404;
 }
 
 /* || CARD */
@@ -63,16 +64,24 @@
 }
 
 /* || CARD WITH BADGES */
-.card-badge {
+.card-badge,.card-dismiss {
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
+}
+.card-badge {
   background-color: var(--card-badge-color);
   padding: 0.3rem;
   border-radius: 0.3rem;
 }
 
-/* || CARD VERTICAL */
+/* || CARD WITH DISMISS */
+.card-dismiss {
+  color: var(--card-dismiss-color);
+  cursor: pointer;
+}
+
+/* || CARD WITH TEXT OVERLAY */
 .card-overlay-container {
   display: flex;
   flex-direction: column;
@@ -127,7 +136,7 @@
   flex-direction: column;
 }
 
-/* || CARD-TEXT-ONLY */
+/* || HORIZONTAL CARD WITH TEXT ONLY */
 .card-text-only {
   padding: 0.5rem;
   flex-direction: column;
