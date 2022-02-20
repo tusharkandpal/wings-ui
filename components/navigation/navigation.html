@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../../assets/Wings.svg" />
+    <link rel="stylesheet" href="../../utilities/doc.css" />
+    <title>Wings UI | Navigation</title>
+  </head>
+  <body>
+    <header id="home-header" class="flex-row flex-space-btw">
+      <h1 class="home-header-title"><a href="/">WINGS UI</a></h1>
+      <nav class="home-nav flex-row">
+        <ul class="home-nav-list ls-none">
+          <li class="home-nav-item">
+            <a class="home-nav-link" href="/">Home</a>
+          </li>
+          <li class="home-nav-item">
+            <a class="home-nav-link nav-link-active" href="../alert/alert.html"
+              >Docs</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="doc-main" class="flex-row">
+      <aside class="doc-sidebar">
+        <ul class="sidebar-list ls-none mp-m">
+          <li class="sidebar-header font-m"><strong>Components</strong></li>
+          <li class="sidebar-item mp-m">
+            <a href="../alert/alert.html" class="sidebar-link">Alert</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../avatar/avatar.html" class="sidebar-link">Avatar</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../badge/badge.html" class="sidebar-link">Badge</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../button/button.html" class="sidebar-link">Button</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../card/card.html" class="sidebar-link">Card</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../image/image.html" class="sidebar-link">Image</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../input/input.html" class="sidebar-link">Input</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../list/list.html" class="sidebar-link">List</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../modal/modal.html" class="sidebar-link">Modal</a>
+          </li>
+          <li
+            class="sidebar-item mp-m active-component"
+            style="background-color: var(--navigation-color)"
+          >
+            <a href="./navigation.html" class="sidebar-link">Navigation</a>
+          </li>
+        </ul>
+      </aside>
+      <section class="doc-section mp-m">
+        <h2 class="doc-header font-xl">Navigation</h2>
+        <p class="doc-text mpy-s">
+          The navigation bar is used for redirecting to different pages within a
+          site.
+        </p>
+
+        <!-- || Standard Navigation -->
+        <div class="component-type mp-s">
+          <h3 class="component-header font-l">Standard Navigation</h3>
+          <p class="component-text mpy-s">
+            The most standard form of navbar used for navigation.
+          </p>
+          <div class="component-display mp-m">
+            <nav class="nav">
+              <span class="nav-left">
+                <i class="fas fa-bars nav-icon"></i>
+                <h2 class="nav-title">Standard</h2>
+              </span>
+              <span class="nav-right">
+                <i class="fas fa-download nav-icon"></i>
+                <i class="fas fa-print nav-icon"></i>
+                <i class="fas fa-bookmark nav-icon"></i>
+              </span>
+            </nav>
+          </div>
+          <p class="iframe-text mpy-xs">
+            Following code snap is here for your reference:
+          </p>
+          <div class="iframe-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=762.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%250A%2520%2520%253Cnav%2520class%253D%2522nav%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522nav-left%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-bars%2520nav-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522nav-title%2522%253EStandard%253C%252Fh2%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522nav-right%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-download%2520nav-icon%2522%253E%253C%252Fi%253E%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-print%2520nav-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-bookmark%2520nav-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%253C%252Fnav%253E%250A%250A"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+

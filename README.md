@@ -55,6 +55,18 @@ A customizable, robust, & accessible library of various components enabling you 
     - Input Form
     - Input Validation Form
 
+- [List](https://wings-ui.netlify.app/components/list/list.html)
+    - Spaced List
+    - Stacked List
+
+- [Modal](https://wings-ui.netlify.app/components/modal/modal.html)
+    - Basic Modal
+    - Alert Modal
+    - Confirm Modal
+
+- [Navigation](https://wings-ui.netlify.app/components/navigation/navigation.html)
+    - Standard Navigation
+
 ## Installation Guide
 
 To use our component library:

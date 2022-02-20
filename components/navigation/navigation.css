@@ -1,0 +1,34 @@
+/* || ROOT CSS */
+:root {
+  --nav-bg-color: #284c88;
+  --nav-title-color: white;
+  --nav-icon-color: #f0f0f0;
+}
+
+/* || STANDARD NAV */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem;
+  margin: 0 0.5rem;
+  background-color: var(--nav-bg-color);
+}
+.nav-title {
+  display: inline;
+  color: var(--nav-title-color);
+}
+.nav-icon {
+  margin: 0 0.8rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: var(--nav-icon-color);
+}
+
+/* || MEDIA QUERIES */
+@media screen and (max-width: 350px) {
+  .nav-icon {
+    margin: 0 0.5rem;
+  }
+}
+
