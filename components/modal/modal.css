@@ -1,0 +1,83 @@
+/* || ROOT CSS */
+:root {
+  --modal-shadow-color: #d3d3d3;
+  --modal-item-bg-color: #f7f7f7;
+  --modal-icon-color: #808080;
+  --modal-btn-color: #7070ff;
+  --modal-btn-hover-color: #f7f7ff;
+}
+
+/* || BASIC MODAL */
+.basic-modal {
+  display: flex;
+  flex-direction: column;
+  max-width: 15rem;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0 0 5px 0 var(--modal-shadow-color);
+  border-radius: 0.3rem;
+}
+.modal-item-list {
+  margin-top: 0.8rem;
+}
+.modal-item {
+  display: flex;
+  align-items: center;
+  padding: 0.3rem 0.8rem;
+  margin-top: 0.3rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.modal-item:hover {
+  background-color: var(--modal-item-bg-color);
+}
+.modal-icon {
+  font-size: 2rem;
+  color: var(--modal-icon-color);
+}
+.modal-item-text {
+  margin-left: 1rem;
+}
+
+/* || ALERT MODAL */
+.alert-modal {
+  max-width: 20rem;
+}
+.modal-text {
+  margin: 0.8rem 0.1rem;
+  color: var(--modal-icon-color);
+}
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+.modal-btn {
+  background-color: transparent;
+  border: none;
+  margin: 1rem 0.3rem 0 0.3rem;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  color: var(--modal-btn-color);
+  font-weight: 800;
+  cursor: pointer;
+}
+.modal-btn:hover {
+  background-color: var(--modal-btn-hover-color);
+}
+
+/* || CONFIRM MODAL */
+.confirm-modal .modal-item {
+  cursor: initial;
+  background-color: transparent;
+}
+.modal-input-list {
+  max-height: 10rem;
+  overflow: auto;
+}
+.item-label {
+  padding: 0.3rem 0;
+  cursor: pointer;
+}
+.item-input {
+  margin-right: 0.5rem;
+}

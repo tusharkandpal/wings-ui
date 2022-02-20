@@ -14,13 +14,16 @@
   --card-color: #98f5e1;
   --image-color: #ffc8dd;
   --input-color: #ffcdf8;
+  --list-color: #ff9e00;
+  --modal-color: #e9edc9;
+  --navigation-color: #eae4e9;
 }
 
 /* || DOCS MAIN */
 .doc-sidebar {
   border-right: 2px solid var(--secondary-color);
   text-align: center;
-  max-height: 90vh;
+  max-height: 100vh;
 }
 .sidebar-header {
   color: var(--secondary-color);
