@@ -1,0 +1,29 @@
+/* || ROOT CSS */
+:root {
+  --stacked-list-bg-color: #d4f4ff;
+}
+
+/* || SPACED LIST */
+.spaced-list {
+  max-width: fit-content;
+  padding: 0.5rem;
+}
+.list-item {
+  padding: 0.3rem;
+  margin: 0.3rem;
+  margin-left: 1.2rem;
+}
+
+/* || STACKED LIST */
+.stacked-list {
+  list-style: none;
+  padding: 0.5rem;
+  max-width: 18rem;
+}
+.stacked-list-item {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background-color: var(--stacked-list-bg-color);
+  border-radius: 0.3rem;
+}
+

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../../assets/Wings.svg" />
+    <link rel="stylesheet" href="../../utilities/doc.css" />
+    <title>Wings UI | List</title>
+  </head>
+  <body>
+    <header id="home-header" class="flex-row flex-space-btw">
+      <h1 class="home-header-title"><a href="/">WINGS UI</a></h1>
+      <nav class="home-nav flex-row">
+        <ul class="home-nav-list ls-none">
+          <li class="home-nav-item">
+            <a class="home-nav-link" href="/">Home</a>
+          </li>
+          <li class="home-nav-item">
+            <a class="home-nav-link nav-link-active" href="../alert/alert.html"
+              >Docs</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="doc-main" class="flex-row">
+      <aside class="doc-sidebar">
+        <ul class="sidebar-list ls-none mp-m">
+          <li class="sidebar-header font-m"><strong>Components</strong></li>
+          <li class="sidebar-item mp-m">
+            <a href="../alert/alert.html" class="sidebar-link">Alert</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../avatar/avatar.html" class="sidebar-link">Avatar</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../badge/badge.html" class="sidebar-link">Badge</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../button/button.html" class="sidebar-link">Button</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../card/card.html" class="sidebar-link">Card</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../image/image.html" class="sidebar-link">Image</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../input/input.html" class="sidebar-link">Input</a>
+          </li>
+          <li
+            class="sidebar-item mp-m active-component"
+            style="background-color: var(--list-color)"
+          >
+            <a href="./list.html" class="sidebar-link">List</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../modal/modal.html" class="sidebar-link">Modal</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../navigation/navigation.html" class="sidebar-link"
+              >Navigation</a
+            >
+          </li>
+        </ul>
+      </aside>
+      <section class="doc-section mp-m">
+        <h2 class="doc-header font-xl">List</h2>
+        <p class="doc-text mpy-s">
+          Items related to a single topic are generally addressed in the form of
+          list. Our component provides utilities for controlling & adapting
+          different styles of a list.
+        </p>
+
+        <!-- || Spaced List -->
+        <div
+          class="component-type mp-s"
+          style="border-color: var(--list-color)"
+        >
+          <h3 class="component-header font-l">Spaced List</h3>
+          <p class="component-text mpy-s">
+            Use spaced (or normal) list to layout data in the form of list.
+          </p>
+          <div class="component-display mp-m">
+            <ol class="spaced-list">
+              <strong>Cart items</strong>
+              <li class="list-item">Shoe</li>
+              <li class="list-item">Hoodie</li>
+              <li class="list-item">Jacket</li>
+              <li class="list-item">Shirt</li>
+            </ol>
+          </div>
+          <p class="iframe-text mpy-xs">
+            Following code snap is here for your reference:
+          </p>
+          <div class="iframe-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=762.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%250A%2520%2520%253Col%2520class%253D%2522spaced-list%2522%253E%250A%2520%2520%2520%2520%253Cstrong%253ECart%2520items%253C%252Fstrong%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253EShoe%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253EHoodie%253C%252Fli%253E%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253EJacket%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253EShirt%253C%252Fli%253E%250A%2520%2520%253C%252Fol%253E%250A%250A"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <!-- || Stacked List -->
+        <div class="component-type mp-s">
+          <h3 class="component-header font-l">Stacked List</h3>
+          <p class="component-text mpy-s">
+            Stacked lists are commonly used for notification section & showing
+            comments.
+          </p>
+          <div class="component-display mp-m">
+            <ul class="stacked-list">
+              <li class="stacked-list-item">Notification 1</li>
+              <li class="stacked-list-item">Notification 2</li>
+              <li class="stacked-list-item">Notification 3</li>
+              <li class="stacked-list-item">Notification 4</li>
+            </ul>
+          </div>
+          <p class="iframe-text mpy-xs">
+            Following code snap is here for your reference:
+          </p>
+          <div class="iframe-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=762.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%250A%2520%2520%253Cul%2520class%253D%2522stacked-list%2522%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522stacked-list-item%2522%253ENotification%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522stacked-list-item%2522%253ENotification%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522stacked-list-item%2522%253ENotification%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522stacked-list-item%2522%253ENotification%25204%253C%252Fli%253E%2520%2520%2520%2520%250A%2520%2520%253C%252Ful%253E%250A%250A"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+
