@@ -12,18 +12,30 @@
   --badge-color: #cfbaf0;
   --button-color: #b9fbc0;
   --card-color: #98f5e1;
+  --grid-color: #ade8f4;
   --image-color: #ffc8dd;
   --input-color: #ffcdf8;
   --list-color: #ffcc7b;
   --modal-color: #e9edc9;
   --navigation-color: #eae4e9;
+  --rating-color: #ccdbfd;
+  --text-utilities-color: #cacfd6;
+  --toast-color: #c0fdff;
 }
 
 /* || DOCS MAIN */
 .doc-sidebar {
   border-right: 2px solid var(--secondary-color);
   text-align: center;
-  max-height: 100vh;
+  max-height: 90vh;
+  overflow: auto;
+}
+.doc-sidebar::-webkit-scrollbar {
+  width: 3px;  /* Remove scrollbar space */
+  /* background: transparent;  Optional: just make scrollbar invisible */
+}
+.doc-sidebar::-webkit-scrollbar-thumb {
+  background: var(--secondary-color)
 }
 .sidebar-header {
   color: var(--secondary-color);
