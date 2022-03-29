@@ -1,0 +1,34 @@
+/* || TOAST */
+.toast {
+  display: inline-flex;
+  background-color: var(--link-color);
+  color: var(--badge-count-text);
+  border-radius: 0.3rem;
+  padding: 0.3rem 1.5rem;
+}
+
+/* || STACKED TOAST */
+.toast-stacked {
+  flex-direction: column;
+}
+
+.toast-text,
+.toast-actions {
+  margin: 0.5rem 0;
+}
+.toast-text {
+  margin-right: 0.9rem;
+}
+
+/* || TOAST ACTIONS */
+.toast-actions {
+  align-self: flex-end;
+}
+.toast-btn {
+  margin-left: 2rem;
+  background-color: transparent;
+  border: transparent;
+  color: var(--asterisk-color);
+  cursor: pointer;
+}
+
