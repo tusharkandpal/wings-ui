@@ -47,6 +47,11 @@ A customizable, robust, & accessible library of various components enabling you 
     - Horizontal Card
     - Horizontal Card with Text Only
 
+- [Grid](https://wings-ui.netlify.app/components/grid/grid.html)
+    - Grid 20-80 Layout
+    - Grid 50-50 Layout
+    - 3-Column Layout
+
 - [Image](https://wings-ui.netlify.app/components/image/image.html)
     - Responsive Image
     - Round Image
@@ -66,6 +71,20 @@ A customizable, robust, & accessible library of various components enabling you 
 
 - [Navigation](https://wings-ui.netlify.app/components/navigation/navigation.html)
     - Standard Navigation
+
+- [Rating](https://wings-ui.netlify.app/components/rating/rating.html)
+    - Rating (Read Only)
+    - Live Rating
+
+- [Text-Utilities](https://wings-ui.netlify.app/components/text-utilities/text-utilities.html)
+    - Heading
+    - Text Color
+    - Text Decoration
+    - Text Alignment
+
+- [Toast](https://wings-ui.netlify.app/components/toast/toast.html)
+    - Basic Toast
+    - Stacked Toast
 
 ## Installation Guide
 
