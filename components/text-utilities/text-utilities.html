@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../../assets/Wings.svg" />
+    <link rel="stylesheet" type="text/css" href="../../utilities/doc.css" />
+    <title>Wings UI | Text-Utilities</title>
+  </head>
+  <body>
+    <header id="home-header" class="flex-row flex-space-btw">
+      <h1 class="home-header-title"><a href="/">WINGS UI</a></h1>
+      <nav class="home-nav flex-row">
+        <ul class="home-nav-list ls-none">
+          <li class="home-nav-item">
+            <a class="home-nav-link" href="/">Home</a>
+          </li>
+          <li class="home-nav-item">
+            <a class="home-nav-link nav-link-active" href="../alert/alert.html"
+              >Docs</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="doc-main" class="flex-row">
+      <aside class="doc-sidebar">
+        <ul class="sidebar-list ls-none mp-m">
+          <strong class="sidebar-header font-m">Components</strong>
+          <li class="sidebar-item mp-m">
+            <a href="../alert/alert.html" class="sidebar-link">Alert</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../avatar/avatar.html" class="sidebar-link">Avatar</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../badge/badge.html" class="sidebar-link">Badge</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../button/button.html" class="sidebar-link">Button</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../card/card.html" class="sidebar-link">Card</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../grid/grid.html" class="sidebar-link">Grid</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../image/image.html" class="sidebar-link">Image</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../input/input.html" class="sidebar-link">Input</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../list/list.html" class="sidebar-link">List</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../modal/modal.html" class="sidebar-link">Modal</a>
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../navigation/navigation.html" class="sidebar-link"
+              >Navigation</a
+            >
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../rating/rating.html" class="sidebar-link">Rating</a>
+          </li>
+          <li
+            class="sidebar-item mp-m active-component"
+            style="background-color: var(--text-utilities-color)"
+          >
+            <a href="./text-utilities.html" class="sidebar-link"
+              >Text Utilities</a
+            >
+          </li>
+          <li class="sidebar-item mp-m">
+            <a href="../toast/toast.html" class="sidebar-link">Toast</a>
+          </li>
+        </ul>
+      </aside>
+      <section class="doc-section mp-m">
+        <h2 class="doc-header font-xl">Text Utilities</h2>
+        <p class="doc-text mpy-s">
+          Text Utilities is for general use of differet font styles.
+        </p>
+
+        <!-- || Headings -->
+        <div
+          class="component-type mp-s"
+          style="border-color: var(--text-utilities-color)"
+        >
+          <h3 class="component-header font-l">Heading</h3>
+          <p class="component-text mpy-s">
+            For various headings representation, heading utilities can be used.
+          </p>
+          <div class="component-display mp-m">
+            <p class="h1">This is a heading</p>
+            <p class="h2">This is a heading</p>
+            <p class="h3">This is a heading</p>
+            <p class="h4">This is a heading</p>
+            <p class="h5">This is a heading</p>
+            <p class="h6">This is a heading</p>
+          </div>
+          <p class="iframe-text mpy-xs">
+            Following code snap is here for your reference:
+          </p>
+          <div class="iframe-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=760.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522h1%2522%253EThis%2520is%2520a%2520heading%253C%252Fp%253E%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522h2%2522%253EThis%2520is%2520a%2520heading%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522h3%2522%253EThis%2520is%2520a%2520heading%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522h4%2522%253EThis%2520is%2520a%2520heading%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522h5%2522%253EThis%2520is%2520a%2520heading%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522h6%2522%253EThis%2520is%2520a%2520heading%253C%252Fp%253E%250A%250A%250A%250A"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <!-- || Text Color -->
+        <div
+          class="component-type mp-s"
+          style="border-color: var(--text-utilities-color)"
+        >
+          <h3 class="component-header font-l">Text Color</h3>
+          <p class="component-text mpy-s">
+            Various utilities for colored texts easily.
+          </p>
+          <div class="component-display mp-m">
+            <p class="text-primary">This is a primary colored text.</p>
+            <p class="text-secondary">This is a secondary colored text.</p>
+            <p class="text-info">This is a info colored text.</p>
+            <p class="text-danger">This is a danger colored text.</p>
+          </div>
+          <p class="iframe-text mpy-xs">
+            Following code snap is here for your reference:
+          </p>
+          <div class="iframe-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=760.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text-primary%2522%253EThis%2520is%2520a%2520primary%2520colored%2520text.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text-secondary%2522%253EThis%2520is%2520a%2520secondary%2520colored%2520text.%253C%252Fp%253E%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text-info%2522%253EThis%2520is%2520a%2520info%2520colored%2520text.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text-danger%2522%253EThis%2520is%2520a%2520danger%2520colored%2520text.%253C%252Fp%253E%250A%250A%250A"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <!-- || Text Decoration -->
+        <div
+          class="component-type mp-s"
+          style="border-color: var(--text-utilities-color)"
+        >
+          <h3 class="component-header font-l">Text Decoration</h3>
+          <p class="component-text mpy-s">
+            Various decorated texts with a use of a simple class utility.
+          </p>
+          <div class="component-display mp-m">
+            <p class="text-overline">This is overlined text.</p>
+            <p class="text-strike">This is striked text.</p>
+            <p class="text-underline">This is a underlined text.</p>
+          </div>
+          <p class="iframe-text mpy-xs">
+            Following code snap is here for your reference:
+          </p>
+          <div class="iframe-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=760.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text-overline%2522%253EThis%2520is%2520overlined%2520text.%253C%252Fp%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text-strike%2522%253EThis%2520is%2520striked%2520text.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text-underline%2522%253EThis%2520is%2520a%2520underlined%2520text.%253C%252Fp%253E%2520%2520%2520%2520%2520%2520%2520%250A%250A%250A"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <!-- || Text Alignment -->
+        <div class="component-type mp-s">
+          <h3 class="component-header font-l">Text Alignment</h3>
+          <p class="component-text mpy-s">
+            For common alignments to perform, these utilities are useful.
+          </p>
+          <div class="component-display mp-m">
+            <p class="text-center">This is center-aligned text.</p>
+            <p class="text-right">This is right-aligned text.</p>
+          </div>
+          <p class="iframe-text mpy-xs">
+            Following code snap is here for your reference:
+          </p>
+          <div class="iframe-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=599.25&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%250A%2509%253Cp%2520class%253D%2522text-center%2522%253EThis%2520is%2520center-aligned%2520text.%253C%252Fp%253E%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522text-right%2522%253EThis%2520is%2520right-aligned%2520text.%253C%252Fp%253E%250A%250A"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+
+
