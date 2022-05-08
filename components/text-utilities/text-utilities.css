@@ -1,3 +1,11 @@
+/* || ROOT CSS */
+:root {
+  --text-primary-color: #42a3c4;
+  --text-secondary-color: gray;
+  --text-info-color: goldenrod;
+  --text-danger-color: red;
+}
+
 /* || HEADINGS */
 .h1,
 .h2,
@@ -29,16 +37,16 @@
 
 /* || TEXT COLOR */
 .text-primary {
-  color: #42a3c4;
+  color: var(--text-primary-color);
 }
 .text-secondary {
-  color: gray;
+  color: var(--text-secondary-color);
 }
 .text-info {
-  color: goldenrod;
+  color: var(--text-info-color);
 }
 .text-danger {
-  color: red;
+  color: var(--text-danger-color);
 }
 
 /* || TEXT DECORATION */
