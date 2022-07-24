@@ -1,0 +1,70 @@
+/* || ROOT CSS */
+:root {
+  --text-primary-color: #42a3c4;
+  --text-secondary-color: gray;
+  --text-info-color: goldenrod;
+  --text-danger-color: red;
+}
+
+/* || HEADINGS */
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 900;
+  margin: 0.5rem;
+}
+.h1 {
+  font-size: 2.5rem;
+}
+.h2 {
+  font-size: 2.2rem;
+}
+.h3 {
+  font-size: 1.9rem;
+}
+.h4 {
+  font-size: 1.6rem;
+}
+.h5 {
+  font-size: 1.3rem;
+}
+.h6 {
+  font-size: 1rem;
+}
+
+/* || TEXT COLOR */
+.text-primary {
+  color: var(--text-primary-color);
+}
+.text-secondary {
+  color: var(--text-secondary-color);
+}
+.text-info {
+  color: var(--text-info-color);
+}
+.text-danger {
+  color: var(--text-danger-color);
+}
+
+/* || TEXT DECORATION */
+.text-overline {
+  text-decoration: overline;
+}
+.text-strike {
+  text-decoration: line-through;
+}
+.text-underline {
+  text-decoration: underline;
+}
+
+/* || TEXT ALIGNMENT */
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+

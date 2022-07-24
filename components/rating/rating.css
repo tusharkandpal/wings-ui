@@ -1,0 +1,40 @@
+/* || ROOT CSS */
+:root {
+  --rating-star-color: #ffd700;
+}
+
+/* || RATING (READ ONLY) */
+.rating {
+  display: inline;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  background-color: var(--valid-color);
+  color: var(--badge-count-text);
+}
+
+/* || LIVE RATING */
+.live-rating {
+  display: inline-block;
+}
+.live-rating .rating-input {
+  display: none;
+}
+.live-rating .rating-label {
+  float: right;
+  margin: 0.2rem;
+  font-size: 1.8rem;
+  color: var(--modal-shadow-color);
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+.live-rating .rating-label::before {
+  content: "\1F7CA";
+}
+.live-rating .rating-input:checked ~ .rating-label::before {
+  color: var(--rating-star-color);
+  transition: transform 0.25s;
+}
+.live-rating .rating-label:hover {
+  transform: scale(1.2);
+}
+
